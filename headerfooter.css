@@ -1,0 +1,37 @@
+header {
+    background-color: #6F4E37;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    flex-direction: row;
+    text-align: center;
+    z-index: 100;
+}
+
+header img {
+    height: 3.5em;
+    width: auto;
+}
+
+#desktopnav {
+    display: flex;
+    align-items: center;
+}
+
+#desktopnav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+
+#desktopnav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3vw; /* Skal muligvis kigges mere på*/
+    font-family: Arial, sans-serif;  /* FONTEN SKAL ÆNDRES*/
+}
