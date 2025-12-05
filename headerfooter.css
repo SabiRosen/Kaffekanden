@@ -1,14 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*------------------------------HEADER-------------------------------*/
+
 header {
     background-color: #6F4E37;
-    padding: 2em;
+    padding: 1.2em 2em;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 80px;
     position: fixed;
     flex-direction: row;
     text-align: center;
+    top: 0;
     z-index: 100;
 }
 
@@ -34,4 +42,89 @@ header img {
     color: white;
     font-size: 1.3vw; /* Skal muligvis kigges mere på*/
     font-family: Arial, sans-serif;  /* FONTEN SKAL ÆNDRES*/
+}
+
+/*------------------------------FOOTER-------------------------------*/
+
+footer {
+    background-color: #6F4E37;
+    color: white;
+    text-align: left;
+    padding: 1em 4.5em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#footer-hjørner img:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px;
+    padding: 1em;
+}
+
+#footer-hjørner img:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 150px;
+    padding: 1em;
+}
+
+#footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3em;
+    margin-top: 4em;
+}
+
+#footer-content section {
+    flex: 1;
+    min-width: 200px;
+    max-width: 400px;
+}
+
+#footer-content h2 {
+    margin-bottom: 1em;
+}
+
+#footer-content p {
+    margin-bottom: 0.5em;
+}
+
+.ikoner, #socialmedia {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 2.5em 0;
+    width: 350px;
+}
+
+.ikoner img, #socialmedia img {
+    height: 70px;
+    width: auto;
+    aspect-ratio: 1 / 1;
+}
+
+#footer-divider {
+    margin: 2em 0;
+    text-align: center;
+}
+
+#footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1em;
+    text-align: center;
+    margin: 2em;
+}
+
+#footer-bottom a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;
 }
