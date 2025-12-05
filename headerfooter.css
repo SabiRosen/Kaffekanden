@@ -100,7 +100,7 @@ footer {
     flex-wrap: wrap;
     gap: 1em;
     margin: 2.5em 0;
-    width: 350px;
+    max-width: 350px;
 }
 
 .ikoner img, #socialmedia img {
