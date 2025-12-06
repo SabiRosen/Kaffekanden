@@ -57,6 +57,8 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*guld hjørner*/
+
 #footer-hjørner img:first-child {
     position: absolute;
     top: 0;
@@ -72,6 +74,8 @@ footer {
     height: 150px;
     padding: 1em;
 }
+
+/*footer indhold*/
 
 #footer-content {
     display: flex;
@@ -95,6 +99,25 @@ footer {
     margin-bottom: 0.5em;
 }
 
+/*kort fra google maps*/
+
+#kort{
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+}
+
+#kort iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* ikoner og sociale medier */
+
 .ikoner, #socialmedia {
     display: flex;
     flex-wrap: wrap;
@@ -108,6 +131,8 @@ footer {
     width: auto;
     aspect-ratio: 1 / 1;
 }
+
+/*footer guld opdelings bundlinje*/
 
 #footer-divider {
     margin: 2em 0;
