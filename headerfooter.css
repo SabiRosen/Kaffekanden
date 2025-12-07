@@ -153,3 +153,21 @@ footer {
     text-decoration: none;
     margin: 0 1em;
 }
+
+
+
+/*Mobil max-width:500px Tablets · max-width:960px*/
+
+@media (max-width: 500px) {
+ 
+
+    #footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+}
