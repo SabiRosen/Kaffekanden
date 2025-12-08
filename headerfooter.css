@@ -44,6 +44,42 @@ header img {
     font-family: Arial, sans-serif;  /* FONTEN SKAL ÆNDRES*/
 }
 
+/*------------Mobil nav-----------*/
+#mobilnav {
+    display: none;
+}
+
+#mobilnav img {
+    width: 100%;
+    height: auto;
+}
+
+#mobil-menu {
+    display: none;
+    position: absolute;
+    top: 80px; /* placere den lige under header */
+    right: 0;
+    background-color: #6F4E37;
+    width: 60%;
+    padding: 1em;
+}
+
+#mobil-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: left;
+}
+
+#mobil-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: Arial, sans-serif;
+}
+
+
 /*------------------------------FOOTER-------------------------------*/
 
 footer {
@@ -160,6 +196,12 @@ footer {
 
 @media screen and (max-width: 500px) {
  
+    #desktopnav {
+        display: none;
+    }
+    #mobilnav {
+        display: block;
+    }
 
     #footer-content {
         flex-direction: column;
