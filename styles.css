@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'roboto';
+    src: url(fonts/Roboto-VariableFont_wdth\,wght.ttf)(format("truetype"));
+}
+
+@font-face {
+    font-family: 'magnolia script';
+    src: url(fonts/Magnolia\ Script.otf)(format("opentype"));
+}
+
+/*--------------------------*/

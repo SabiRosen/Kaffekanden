@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 /*------------------------------HEADER-------------------------------*/
 
 header {
@@ -21,7 +22,7 @@ header {
 }
 
 header img {
-    height: 3.5em;
+    height: 2.5em;
     width: auto;
 }
 
@@ -40,8 +41,8 @@ header img {
 #desktopnav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 1.3vw; /* Skal muligvis kigges mere på*/
-    font-family: Arial, sans-serif;  /* FONTEN SKAL ÆNDRES*/
+    font-size: 1.2vw; /* Skal muligvis kigges mere på*/
+    font-family: 'roboto', sans-serif; 
 }
 
 /*------------Mobil nav-----------*/
@@ -79,7 +80,7 @@ header img {
     color: white;
     text-decoration: none;
     font-size: 1.2em;
-    font-family: Arial, sans-serif;
+    font-family: 'roboto', sans-serif;
 }
 
 
@@ -93,7 +94,7 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'roboto', sans-serif;
 }
 
 /*guld hjørner*/
@@ -174,8 +175,24 @@ footer {
 /*footer guld opdelings bundlinje*/
 
 #footer-divider {
-    margin: 2em 0;
-    text-align: center;
+    padding: 2em 0;
+    align-items: center;
+    width: 100%;
+}
+#footer-divider img {
+    width: 100%;
+    height: auto;
+}
+
+#footer-divider-mobil {
+    display: none;
+    padding: 2em 0;
+    align-items: center;
+    width: 100%;
+}
+#footer-divider-mobil img {
+    width: 100%;
+    height: auto;
 }
 
 #footer-bottom {
@@ -207,20 +224,27 @@ footer {
     }
 
     #kort {
-        width: 340px; /*der er muligvis en bedre løsning?*/
+        width: 100%;
     }
 
     #footer-content {
         flex-direction: column;
-        align-items: center;
     }
 
-    #footer-divider img {
-        max-width: 400px; /*der skal laves en bedre løsning, nok et andet billede*/
+    #footer-content section {
+        min-width: 100%;
+        max-width: 100%;
     }
 
     #footer-bottom {
         flex-direction: column;
         align-items: center;
+    }
+
+    #footer-divider {
+        display: none;
+    }
+    #footer-divider-mobil {
+        display: block;
     }
 }
