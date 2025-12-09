@@ -9,3 +9,102 @@
 }
 
 /*--------------------------*/
+
+body{
+    background-color: #f9efe1;
+}
+
+h2{
+    font-family: 'magnolia script', cursive;
+    letter-spacing: 3px;
+    font-weight: 300;
+    font-size: 2.2em;
+}
+
+/* Call to Action*/
+
+.cta{
+    display: block;
+    max-width: fit-content;
+    margin: 1rem auto 0;
+    padding: 1rem 2.2rem;
+    background-color: #738743;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-family: 'roboto', sans-serif;
+}
+
+.cta:hover{
+    background-color: #ADC178;
+    color: #000;
+    transition: 0.3s ease-in-out;
+}
+
+/* Guld hjørner */
+
+.corner {
+    position: absolute;
+    width: 60;
+}
+
+.tl {
+    top: 20px;
+    left: 20px;
+}
+.tr {
+    top: 20px;
+    right: 20px;
+}
+.bl {
+    bottom: 20px;
+    left: 20px;
+}
+.br {
+    bottom: 20px;
+    right: 20px;
+}
+
+
+/* "hero" banner sektioner */
+
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 450px; /* Juster højden evt ikke px */
+    overflow: hidden;
+}
+
+.hero-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /*filter: brightness(70%);*/
+}
+
+.hero-info {
+    position: absolute;
+    top: 30%;
+    right: 8%;
+    color: white;
+    text-align: left;
+    background: rgb(176, 137, 104, 0.4);
+    background: linear-gradient(90deg, rgba(176, 137, 104, 1, 0.4) 0%, rgba(111, 78, 55, 1, 0.4) 100%);
+    backdrop-filter: blur(0.5rem);
+    padding: 1.5rem 3rem 1.5rem 3rem;
+    border-radius: 1.5rem;
+    border: solid 2px rgb(250, 222, 205, 0.8);
+    width: 400px;
+    height: auto;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-info p {
+    font-family: 'roboto', sans-serif;
+    font-size: 1.4em;
+    line-height: 1.5;
+}

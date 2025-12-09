@@ -97,23 +97,8 @@ footer {
     font-family: 'roboto', sans-serif;
 }
 
-/*guld hjørner*/
+/*guld hjørner stylet i styles.css*/
 
-#footer-hjørner img:first-child {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 150px;
-    padding: 1em;
-}
-
-#footer-hjørner img:last-child {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 150px;
-    padding: 1em;
-}
 
 /*footer indhold*/
 

@@ -1,0 +1,222 @@
+
+/* hero-sektion*/
+
+#hero {
+    width: 100%;
+    height: 90vh;
+}
+
+#hero img {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    z-index: 1;
+    position: relative;
+}
+
+
+#hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    top: 0;
+    z-index: 2;
+    background: rgba(0,0,0,0.3); /* mørk overlay*/
+
+}
+
+/* logo */
+
+#hero-logo {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+}
+
+#hero-logo img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+/* info sektionen på forsiden*/ 
+
+#info-kasse { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem;
+    position: relative;
+}
+
+.info-kolonner { 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+    text-align: left;
+    padding: 2rem;
+}
+
+.info-sektion {
+font-family: 'roboto', sans-serif;
+
+}
+
+.info-sektion p { 
+font-size: 1.2rem;
+line-height: 1.8rem;
+}
+
+
+#info-facade-billede {
+width: 550px;
+height: 300px;
+
+}
+
+#info-facade-billede img {
+width: 100%;
+object-fit: cover;
+}
+
+
+
+
+
+/* computerfri og vores gæster siger sektion*/ 
+
+
+#forside-computer-afsnit {
+    background-color: #6f4e37;
+    color: #fff;
+    padding: 2.2rem;
+    position: relative;
+    max-width: 1100px;
+    margin: auto;
+}
+
+#forside-computer-indhold {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /*den gør at der er plads til vores "computer-divider*/
+    gap: 3rem;
+    padding: 2rem 1rem;
+}
+
+.forside-computer-col {
+    flex: 1;
+    text-align: center;
+}
+
+.forside-computer-col p {
+    font-size: 1.5rem;
+    font-family: 'roboto', sans-serif;
+    padding-top: 1rem;
+}
+
+.icon {
+    width: 5rem;
+    margin-bottom: 1rem;
+}
+
+#computer-divider {
+    width: 1px;
+    background-color: #fff;
+    margin: 0 1rem;
+}
+
+.forside-computer-billede{
+    width: 90%;
+    height: 200px;
+    overflow: hidden;
+    margin: 1.5rem auto 0;
+
+}
+
+.forside-computer-billede img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+/* 
+
+#com-fri-gaester-kasse{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: #6f4e37;
+    margin: 0rem 5rem 0rem 5rem;
+}
+
+.brun-ikon {
+    width: 50%;
+}
+
+#brun-indhold-kasse {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2rem;
+    text-align: left;
+    padding: 2rem;
+    color: white;
+}
+
+.brun-indhold { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.brun-indhold img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+#brune-billeder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.brun-sektion{ 
+
+}
+
+.brun-sektion p {
+    font-size: 1.2rem;
+}
+
+.brun-billede {
+    width: 60%;
+    height: auto;
+}
+.brun-billede img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+*/

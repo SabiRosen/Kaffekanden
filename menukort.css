@@ -1,0 +1,98 @@
+
+body{
+
+    background-image: url(images/menu-baggrund.jpg);
+    background-size: contain;
+    
+}
+
+#overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.6); /*Sorty baggrund med 0.5 transperens*/
+    z-index: 0;
+       
+}
+
+h1, a{
+    font-family: 'roboto', sans-serif;
+}
+
+#varer{
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    position: relative;
+    z-index: 2;
+    display: block;
+}
+.menuoverskrift{
+    margin: 2%;
+}
+
+.border{
+    border-top: #bba14f solid 2px; /*Begge borderlines skal være kortere*/
+    border-bottom: #bba14f solid 2px;
+    width: 40%;
+    margin: auto;
+    padding: 1%;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 2%;
+    display: flex;
+    gap: 4%;
+}
+
+.border h1, .border a{
+    font-weight: 100;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+
+}
+
+.border img{
+    width: 30px; /*Skal ikke være px*/
+}
+
+
+/*Nyheder sektion*/
+#nyheder{
+    margin-top: 10%;
+    width: 100%;
+    color: white;
+    position: relative;
+    z-index: 2;
+    align-items: center;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+#nyheder h2{
+    margin-left: 2%;
+    margin-bottom: 1%;
+}
+
+#nyhederindhold{
+    background-color: #b08968;
+    width: 100%;
+    display: flex;
+}
+
+#nyhederindhold img{
+    width: 2%;
+}
+
+#nyhedsprodukter img{ /*Ikke centreret 100%?*/
+    width: 24.7%;
+    padding: 2.5%;
+    aspect-ratio: calc();
+    display: inline-block;
+    
+}
+
+#nyhedsprodukter2{ /*Skal have nye billeder til en scrollfution med js?*/
+    display: none;
+}
