@@ -1,18 +1,70 @@
 
+/* fitty-fitty */
 
-.fitty-fitty {
+.fifty-fifty {
     display: flex;
-    flex-direction: row;
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: 70%;
+    margin: 8% auto 0 auto;
+    justify-content: center;
+    
+}
 
+.fifty-fifty-billede {
+    width: 50%;
+}
+
+.fifty-fifty-billede img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* bevarer billedets proportioner */
 
 }
 
-.billede-tekst img {
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    gap: 20px;
-
+.fifty-indhold {
+    position: relative; /* gør at guldhjørnerne kan sidde ovenpå indholdet */
+    padding: 4em;
+    width: 50%;
+    background: #6f4e37;
+    color: white;
 }
+
+/* arrang - font og tekst farve */
+
+.fifty-indhold h2{
+    margin-bottom: 0.5em;
+}
+
+.fifty-indhold p{
+    font-family: 'roboto', sans-serif;
+    font-size: 1.3vw;
+    line-height: 1.5em;
+}
+
+/*kork baggrunds fifty fifty*/
+
+.fifty-indhold-kork {
+    position: relative;
+    padding: 4em;
+    width: 50%;
+    background-image: url(images/kork-baggrund.jpg);
+    color: white;
+}
+
+.fifty-kork-baggrund img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fifty-indhold-kork h2 {
+    margin-bottom: 0.5em;
+}
+
+.fifty-indhold-kork p {
+    font-family: 'roboto', sans-serif;
+    font-size: 1.3vw;
+    line-height: 1.5em;
+}
+
+
+

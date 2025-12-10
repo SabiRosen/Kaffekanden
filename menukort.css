@@ -12,6 +12,7 @@ body{
     height: 100%;
     background-color: rgb(0, 0, 0, 0.6); /*Sorty baggrund med 0.5 transperens*/
     z-index: 0;
+    top: 0;
        
 }
 
@@ -20,6 +21,7 @@ h1, a{
 }
 
 #varer{
+    margin-top: 10%;
     text-align: center;
     justify-content: center;
     width: 100%;
@@ -33,7 +35,7 @@ h1, a{
 }
 
 .border{
-    border-top: #bba14f solid 2px; /*Begge borderlines skal være kortere*/
+    border-top: #bba14f solid 2px;
     border-bottom: #bba14f solid 2px;
     width: 40%;
     margin: auto;
@@ -54,7 +56,7 @@ h1, a{
 }
 
 .border img{
-    width: 30px; /*Skal ikke være px*/
+    width: 7%;
 }
 
 
@@ -85,14 +87,15 @@ h1, a{
     width: 2%;
 }
 
-#nyhedsprodukter img{ /*Ikke centreret 100%?*/
+#nyhedsprodukter img{
     width: 24.7%;
     padding: 2.5%;
-    aspect-ratio: calc();
+    aspect-ratio: 1; /*Trækker i billederne....*/
+    object-fit: cover;
     display: inline-block;
-    
 }
 
-#nyhedsprodukter2{ /*Skal have nye billeder til en scrollfution med js?*/
+
+/*#nyhedsprodukter2{ /*Skal have nye billeder til en scrollfution med js?*
     display: none;
-}
+}*/

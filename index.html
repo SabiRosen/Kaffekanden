@@ -56,6 +56,7 @@
                 
     </div>
     
+    <!-- animationsbanner -->
 <br> 
 <br> 
 <br>
@@ -64,20 +65,7 @@
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
     
     <!-- P: sektion til åbningstider, lokation osv. -->
 
@@ -88,34 +76,44 @@
     <img class="corner bl" src="images/guldhjørne3.svg" alt="guld hjørne">
     <img class="corner br" src="images/guldhjørne4.svg" alt="guld hjørne">
 
-   
+    <div id="info-indhold">
     
-    <div class="info-kolonner">
-        <section class="info-sektion">
-            <h2>Åbningstider</h2>
-            <p>Mandag - Fredag: 09:30 - 17:00</p>
-            <p>Lørdag: 9:30-16:00</p>
-            <p>Søn- og helligedage: Lukket</p>
-        </section>
-        <div id="info-facade-billede">
-            <img src="images/facade-billede.jpg" alt="billede af cafeens facade">
+        <div class="info-kolonner">
+            <section class="info-sektion">
+                <h2>Åbningstider</h2>
+
+                <div class="info-aabning">
+                    <p>Mandag - Fredag:</p>
+                    <p>09:30 - 17:00</p>
+                </div>
+                <div class="info-aabning">
+                    <p>Lørdag: </p>
+                    <p>9:30-16:00</p>
+                </div>
+                <div class="info-aabning">
+                    <p>Søn- og helligedage: <p>
+                    <p>Lukket</p>
+                </div>
+            </section>
+            
+            <div id="info-facade-billede">
+                <img src="images/facade-billede.jpg" alt="billede af cafeens facade">
+            </div>
+
         </div>
+        <div class="info-kolonner">
+            <section class="info-sektion">
+                <h2>Find os på</h2>
+                <p>Nygade 4D, 8600 Silkeborg</p>
+            </section>
 
+            <section class="info-sektion">
+                <h2>En Café som i gamle dage</h2>
+                <p>Hos Kaffekanden byder vi på lækker kaffe, hjemmebag og en afslappet stemning i vores hyggelige café. 
+                Vi glæder os til at give dig en lille hvilestund i din hverdag.</p>
+            </section>
+        </div>
     </div>
-    <div class="info-kolonner">
-          <section class="info-sektion">
-            <h2>Find os på</h2>
-            <p>Nygade 4D, 8600 Silkeborg</p>
-        </section>
-
-        <section class="info-sektion">
-            <h2>En Café som i gamle dage</h2>
-            <p>Hos Kaffekanden byder vi på lækker kaffe, hjemmebag og en afslappet stemning i vores hyggelige café. 
-               Vi glæder os til at give dig en lille hvilestund i din hverdag.</p>
-        </section>
-    </div>
-    
-
 </div> 
     
 
@@ -128,11 +126,42 @@
 <br>
 
 
-
-
-
-
     <!-- H: sektion til tre kolonner -->
+
+    <div id="tre-kolonner-container">
+        <!-- <img src="images/kork-baggrund.jpg" alt="kork baggrund"> -->
+
+        <div class="kolonne">
+            <img class="kolonne-billede" src="images/computerfri-billede.jpg" alt="kaffeposer">
+            <h2> Vores Shop</h2>
+            <br>
+            <p>Sammensæt den perfekte gavekurv med enten løs te, kaffebønner og chokolade m.m. i vores salgsafdeling.</p>
+
+            <a class="cta" href="produktside.html"> Se mere</a>
+        </div>
+
+        <div class="kolonne">
+            <img class="kolonne-billede" src="images/computerfri-billede.jpg" alt="kaffe">
+            <h2> Menu</h2>
+            <br>
+            <p> Vores menu har alt fra friskbrygget kaffe og te til kager og små fristelser. 
+                Perfekt til en velsmagende pause.</p>
+            
+            <a class="cta" href="menu.html"> Se mere</a>
+        </div>
+
+        <div class="kolonne">
+            <img class="kolonne-billede" src="images/computerfri-billede.jpg" alt="lej caféen">
+            <h2> Lej Caféen</h2>
+            <br>
+            <p> Lej caféen til særlige anledninger. Vi sørger for god stemning og forplejning, der gør dagen helt særlig.</p>
+
+            <a class="cta" href="lej-café.html"> Se mere</a>
+        </div>
+
+    </div>
+
+
 <br>
 <br>
 <br>
@@ -187,58 +216,7 @@
 
         </div>
 
-    <!--
-<div id="com-fri-gaester-kasse">
-    <div class="top-guldhjorner">
-        <img src="images/guldhjørne1.svg" alt="guld hjørne" class="brun-hjørner">
-        <img src="images/guldhjørne2.svg" alt="guld hjørne" class="brun-hjørner">
-    </div>
 
-
-    <div id="brun-indhold-kasse">
-        <div class="brun-indhold">
-            <div class="brun-ikon">
-                <img src="images/computerikon.svg" alt="computerfri ikon">
-            </div>
-
-            <section class="brun-sektion">
-                <h2>Computerfri</h2>
-                <p>Fokus er på stemning og en pause fra skærme.</p>
-            </section>
-        </div>
-        <div class="brun-indhold-bund">
-            <div class="brun-ikon">
-                <img src="images/stjerneikon.svg" alt="stjerne ikon">
-            </div>
-
-            <section class="brun-sektion">
-                <h2>Vores gæster siger</h2>
-                <p>Kaffekanden har stort fokus på nærvær og godt humør.</p>
-            </section>
-        </div>
-
-    </div>
-
-    <div id="brune-billeder">
-        
-        <div class="brun-billede">
-            <img src="images/computerfri-billede.jpg" alt="computerfri billede">
-        </div>
-        
-        <div class="brun-billede">
-            <img src="images/gæstersiger-billede.jpg" alt="gæster siger billede">
-        </div>
-
-    </div>
-    <div class="nederste-guldhjorne">
-        <img src="images/guldhjørne3.svg" alt="guld hjørne" class="brun-hjørner">
-        <img src="images/guldhjørne4.svg" alt="guld hjørne" class="brun-hjørner">
-    </div>
-
-
-</div>
-
--->
 
     
     <!-- H: sektion til nyhedsbrevet -->

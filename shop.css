@@ -13,16 +13,16 @@
     color: #fff;
     text-align: left;
     width: 30%;
+    margin-bottom: 1.5rem;
 }
-/*
 .produkt-kort img {
     width: 100%;
     height: 400px;
     margin-bottom: 1rem;
     object-fit: cover;
-}*/
+}
 
-.produkt-billeder {
+/*.produkt-billeder {
     position: relative;
     width: 100%;
     aspect-ratio: 1/1;
@@ -34,7 +34,7 @@
     height: 100%;
     object-fit: cover;
     display: block;
-}
+}*/
 
 .produkt-png {
     position: absolute;
@@ -52,7 +52,7 @@
 }
 
 .produkt-info p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.6rem;
 }
 

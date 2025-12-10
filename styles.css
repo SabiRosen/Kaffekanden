@@ -4,9 +4,16 @@
 }
 
 @font-face {
-    font-family: 'magnolia script';
-    src: url(fonts/Magnolia\ Script.otf)(format("opentype"));
+    font-family: 'amita';
+    src: url(fonts/Amita-Bold.ttf) (format("truetype"));
 }
+
+@font-face {
+    font-family: 'cookie';
+    src: url(fonts/Cookie-Regular.ttf) format("truetype");
+}
+
+
 
 /*--------------------------*/
 
@@ -15,10 +22,14 @@ body{
 }
 
 h2{
-    font-family: 'magnolia script', cursive;
+    font-family: 'cookie'; 
     letter-spacing: 3px;
     font-weight: 300;
-    font-size: 2.2em;
+    font-size: 3em;
+}
+
+p {
+    font-family: 'roboto', sans-serif;
 }
 
 /* Call to Action*/
