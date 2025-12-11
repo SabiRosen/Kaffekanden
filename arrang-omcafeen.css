@@ -67,4 +67,24 @@
 }
 
 
+/*-----------Om os side------------*/
+
+
+.historie-parent{
+    width: 70%;
+    display: flex;
+    padding: 5%;
+    border: #bba14f solid 2px;
+    border-radius: 2rem;
+    margin: 10% auto;
+}
+
+
+.historie-billede img{
+    width: 80%;
+}
+
+.historie-tekst{
+    width: 120%;
+}
 
