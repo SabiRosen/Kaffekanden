@@ -70,21 +70,37 @@
 /*-----------Om os side------------*/
 
 
-.historie-parent{
+.historie-container{ /*Kan laves om til id#*/
     width: 70%;
     display: flex;
-    padding: 5%;
-    border: #bba14f solid 2px;
-    border-radius: 2rem;
-    margin: 10% auto;
+    padding: 5% 2%;
+    border: #6f4e37 solid 2px;
+    border-radius: 3rem;
+    margin: 9% auto;
 }
 
 
 .historie-billede img{
     width: 80%;
+    position: relative;
 }
 
-.historie-tekst{
+.silkeborgsbedste{
+    position: absolute;
+    left: 44%;
+    top: 70%;
+}
+
+.silkeborgsbedste img{
+    width: 30%;
+}
+
+.historie-tekst{ /*Giver ikke logisk mening med 120%...*/
     width: 120%;
+}
+
+.historie-tekst p{
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
