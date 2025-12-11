@@ -95,6 +95,7 @@ footer {
     bottom: 0;
     width: 100%;
     font-family: 'roboto', sans-serif;
+    z-index: 10;
 }
 
 /*guld hjørner stylet i styles.css*/

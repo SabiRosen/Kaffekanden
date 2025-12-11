@@ -171,9 +171,7 @@ aspect-ratio: 6/3;
 }
 
 
-
 /* computerfri og vores gæster siger sektion*/ 
-
 
 #forside-computer-afsnit {
     background-color: #6f4e37;
@@ -197,7 +195,7 @@ aspect-ratio: 6/3;
 }
 
 .forside-computer-col p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: 'roboto', sans-serif;
     padding-top: 1rem;
 }
@@ -220,9 +218,114 @@ aspect-ratio: 6/3;
     margin: 1rem auto; /* første værdi er top/bund, anden er venstre/højre (altså siderne). kan gøres sådan her hvis man ikke vil skrive margin-left osv.*/
 
 }
+
 /*selve billedet*/
 .forside-computer-billede img{
     width: 100%;
     height: 100%;
     object-fit: cover; /*får billedet til at udfylde kassen uden strech*/
+}
+
+
+/* Nyhedsbrev sektion */ 
+
+#nyhedsbrev-forside {
+   max-width: 100%;
+   max-height: 800px;
+
+   position: relative;
+   z-index: 1;
+
+}
+
+#nyhedsbrev-forside img{
+    width: 100%;
+    height: 100%;
+}
+
+.brev-illustration {
+    width: 60%;
+    height: 60%;
+
+    position: absolute;
+    z-index: 3;
+    bottom: 15%;
+
+}
+
+.brev-illustration img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.tilmeld-kasse {
+    width: 25%;
+    /* height: 30%; */
+    border-radius: 1rem;
+    padding: 1rem;
+    line-height: 2.5rem;
+
+    text-align: center;
+    position: absolute;
+    z-index: 5;
+    bottom: 10%;
+    right: 5%; 
+
+
+/* glas-effekt */
+    border: solid #fff 3px;
+    background: rgb(176, 137, 104, 0.4);
+    background: linear-gradient(90deg, rgba(176, 137, 104, 1, 0.4) 0%, rgba(111, 78, 55, 1, 0.4) 100%);
+    backdrop-filter: blur(0.5rem);
+}
+
+/* font og farve */
+
+.tilmeld-indhold h2 {
+    color: #fff;
+}
+
+.tilmeld-indhold p {
+    font-family: "roboto", sans-serif;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+label {
+    font-family: "roboto", sans-serif;
+    font-size: 1.3rem;
+
+}
+
+#email {
+    background-color: transparent;
+    /* border: solid #fff 2px; */
+    border: none;
+    border-bottom: solid #fff 2px;
+    color: #fff;
+
+    margin-top: 2rem;
+
+}
+
+.cta-input {
+    width: 50%;
+    background-color: #738743;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 30px;
+    padding: 1rem 2.2rem;
+    margin-top: 2rem;
+    font-size: 1.2rem; 
+    cursor: pointer;
+
+}
+
+.cta-input:hover {
+    background-color: #ADC178;
+    color: #000;
+    transition: 0.3s ease-in-out;
 }

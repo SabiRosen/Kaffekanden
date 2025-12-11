@@ -68,39 +68,151 @@
 
 
 /*-----------Om os side------------*/
+/*Vores histoire afsnit*/
 
 
-.historie-container{ /*Kan laves om til id#*/
+#historie-container{ /*Kan laves om til id#*/
     width: 70%;
     display: flex;
-    padding: 5% 2%;
+    padding: 5% 3%;
     border: #6f4e37 solid 2px;
     border-radius: 3rem;
-    margin: 9% auto;
+    margin: 10% auto 5%;
+    justify-content: space-between;
 }
 
+.historie-billede{
+    width: 40%;
+    position: relative;
+}
 
 .historie-billede img{
-    width: 80%;
-    position: relative;
+    width: 100%;
 }
 
 .silkeborgsbedste{
     position: absolute;
-    left: 44%;
-    top: 70%;
+    left: 40%;
+    top: 65%;
 }
 
 .silkeborgsbedste img{
     width: 30%;
 }
 
-.historie-tekst{ /*Giver ikke logisk mening med 120%...*/
-    width: 120%;
+.historie-tekst{
+    width: 50%;
 }
 
 .historie-tekst p{
     padding-top: 2%;
     padding-bottom: 2%;
 }
+
+
+/*Kaffekande-collage galleri*/
+
+#billedkande{
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    position: relative;
+}
+
+#billedkande img{
+    width: 65%;
+    margin: auto;
+    aspect-ratio: 4/3; /*Skal slettes når det rigtige billede kommer ind - Det er bare lige som størrelsesforhold/skala*/
+}
+
+.cta{
+    position: absolute;
+    top: 90%;
+    right: 5%;
+}
+
+
+/*Comuterfri og hundevenlig*/
+.fifty-fifty{ /*CSS til dissse sektioner er under genrelle styles i styles.css*/
+    margin-bottom: 10%;
+}
+
+/*Dette siger vores gæster*/
+
+#gæster{
+    margin-top: 10%;
+    width: 100%;
+    color: black;
+    position: relative;
+    z-index: 2;
+    align-items: center;
+    overflow: auto;
+    white-space: nowrap;
+    margin-bottom: 5%;
+    
+}
+
+#gæster h2{
+    margin-left: 2%;
+    margin-bottom: 1%;
+}
+
+#gæsterindhold{
+    background-color: #b08968;
+    width: 100%;
+    display: flex;
+}
+
+.citater{
+    background-color: antiquewhite;
+    margin: 2% auto;
+    padding: 6% 2%;
+    border-radius: 1rem;
+    width: 20%;
+   
+}
+
+.citater p{
+    text-align: center;
+    font-size: 1.2rem;
+    white-space: normal;
+}
+
+.citater h4{
+    font-family: 'roboto', sans-serif;
+    font-size: 1.3rem;
+    white-space: normal;
+    text-align: center;
+}
+
+
+
+
+/*-----Lille nyhedsbrev----*/
+.brevkorkbaggrund{
+    width: 100%;
+    position: relative;
+    height: 700px;
+    margin-top: 10%;
+}
+
+.brevkorkbaggrund img{
+    border-radius: 5rem 5rem 0rem 0rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.brev{
+    position: absolute;
+    width: 30%;
+    z-index: 8;
+    bottom: 10%;
+    left: 15%;
+}
+
+.brev img {
+    width: 100%;
+}
+
 

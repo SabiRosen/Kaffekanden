@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="headerfooter.css">
+    <link rel="stylesheet" href="shop.css">
     <script src="script.js" defer></script>
     <link rel="icon" type="image/x-icon" href="/images/favikon.png">
     <title>Produktside</title>
@@ -39,13 +40,60 @@
 
     </header>
 
-    <main>
-        <br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br>
-        <br><br><br><br><br><br><br>
-        <!-- Indhold til produktsiden her -->
+    <main id="produkt-side">
+        <br><br>
+        
+        <!--breadcrumb/sti-->
+
+        <nav class="breadcrumb">
+            <a href="shop.html">Produkter</a> › <span>Aroma kaffe</span>
+        </nav>
+
+        <div id="produkt-overview">
+            <div id="produkt-billede-area">
+                <button class="pil venstre"><img src="images/pilvenstre.svg" alt="pil"></button>
+
+                <img class="produkt-main-img" src="images/aroma-orange-2.jpg">
+
+                <button class="pil hoejre"> <img src="images/pilhøjre.svg" alt="pil"> </button>
+
+                <div class="produkt-thumbs">
+                    <img src="images/aroma-orange-1.jpg" alt="aroma orange">
+                    <img src="images/aroma-chokolade-1.jpg" alt="aroma chokolade">
+                    <img src="images/aroma-chokolade-2.jpg" alt="aroma chokolade">
+                    <img src="images/aroma-hassel-1.jpg" alt="aroma hassel">
+                    <img src="images/aroma-hassel-2.jpg" alt="aroma hassel">
+                    <img src="images/aroma-toffee-1.jpg" alt="aroma toffee">
+                    <img src="images/aroma-toffee-2.jpg" alt="aroma toffee">
+                </div>
+
+            </div>
+
+            <section class="produkt-info-area">
+                <h2>Aroma kaffe</h2>
+                <h3> 125 kr.</h3>
+
+                <p>Produktbeskrivelse...</p>
+
+                <p class="kun-butik">Kan kun købes i butikken</p>
+            </section>
+
+        </div>
+
+        <div id="produkt-relateret">
+            <h2>Flere i samme kategori</h2>
+
+            <div id="relateret-slider">
+                <button class="rel-pil venstre"><img src="images/pilvenstre.svg" alt="pil"></button>
+
+                <div id="relateret-kort-container">
+                    <!-- her skal være produktkort-->
+                </div>
+
+                <button class="rel-pil venstre"><img src="images/pilhøjre.svg" alt="pil"></button>
+            </div>
+        </div>
+        
     </main>
 
     <footer>
