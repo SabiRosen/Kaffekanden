@@ -91,3 +91,187 @@
 
 /* enkelt produkt side*/
 
+
+.breadcrumb {
+    font-family: 'roboto', sans-serif;
+    font-size: 1rem;
+    margin: 3rem 12rem;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #000;
+}
+
+.breadcrumb span {
+    margin: 0 0.4rem;
+}
+
+.breadcrumb .current {
+    color: #000;
+    font-weight: 600;
+}
+
+/*galleri i venstre side*/
+
+#produkt-overview {
+    display: flex;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#produkt-billede-area{
+    width: 45%;
+    position: relative;
+}
+
+.produkt-main-img{
+ width: 100%;
+ aspect-ratio: 1/1;
+ object-fit: cover;
+}
+
+.pil {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.pil img {
+    width: 30px;
+}
+
+.pil.venstre {
+    left: -2rem;
+}
+
+.pil.hoejre {
+    right: -2rem;
+}
+
+.produkt-thumbs {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.2rem;
+    padding-bottom: 0.4rem;
+    overflow-x: auto;
+}
+
+.produkt-thumbs img {
+    width: 95px;
+    height: 95px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.25s ease;
+}
+
+.produkt-thumbs img:hover {
+    transform: scale(1.1);
+}
+
+
+/*tekst afsnit i højre side*/
+
+.produkt-info-area {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 1rem;
+}
+
+.produkt-info-area {
+    margin-bottom: 0.5rem;
+}
+
+.produkt-info-area h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-family: 'roboto', sans-serif;
+}
+
+.produkt-info-area p {
+    font-family: 'roboto', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+    margin-bottom: 1.5rem;
+    max-width: 90%;
+}
+
+.kun-butik{
+    font-weight: bold;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+}
+
+/* Flere i samme kategori*/
+
+#produkt-relateret {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    text-align: left;
+}
+
+#produkt-relateret {
+    margin-bottom: 2rem;
+}
+
+#relateret-slider {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.rel-pil {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.rel-pil img {
+    width: 35px;
+}
+
+
+
+#relateret-kort-container {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 1rem 0;
+}
+
+#relateret-kort-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* --- SPECIFIKT TIL 'Flere i samme kategori' --- */
+
+#relateret-kort-container .produkt-kort {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 280px;
+    width: 280px;
+    margin: 0;
+}
+
+#relateret-kort-container .produkt-kort img{
+    height: 280px;
+    object-fit: cover;
+}
+
+#relateret-kort-container .produkt-info {
+    padding: 1rem;
+}
+
+#relateret-kort-container .produkt-info-top {
+    font-size: 1.1rem;
+}
