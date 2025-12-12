@@ -1,14 +1,19 @@
 
 /* hero-sektion*/
 
+#hero-container {
+    width: 100%;
+    height: 100vh;
+}
+
 #hero {
     width: 100%;
-    height: 90vh;
+    height: 91%;
 }
 
 #hero img {
     width: 100%;
-    height: 90vh;
+    height: 100%;
     object-fit: cover;
     z-index: 1;
     position: relative;
@@ -18,7 +23,7 @@
 #hero-overlay {
     position: absolute;
     width: 100%;
-    height: 90vh;
+    height: 91%;
     top: 0;
     z-index: 2;
     background: rgba(0,0,0,0.3); /* mørk overlay*/
@@ -42,6 +47,55 @@
 }
 
 /* animationsbanner*/ 
+
+
+.rullebånd {
+    height: 9%;
+
+    background-color: #6F4E37; 
+    color: #FFFFFF; 
+    font-size: 1.2rem;
+    font-family: 'roboto', sans-serif;
+    overflow: hidden; /* skjuler alt indhold, der går ud over containerens grænser */
+    user-select: none; /* forhindrer markering af tekst */
+
+    --gap: 10px; /* definerer en CSS-variabel for mellemrum mellem gentaget indhold */
+    display: flex;
+    gap: var(--gap); /* anvender mellemrum mellem gentaget indhold */
+
+}
+
+.rullebånd ul {
+    list-style: none;
+    flex-shrink: 0; /* bredden er udvidet efter behov */
+    min-width: 100%; /* dækker hele bredden, hvis der er nok indhold*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--gap);
+
+    animation: scroll 30s linear infinite; /* anvender scroll animationen */    
+}
+
+.rullebånd:hover ul {
+    animation-play-state: paused; /* pauser animationen ved hover */
+}
+
+@keyframes scroll {
+    to {
+        transform: translateX(calc(-50% - 20px)); /* flyt indholdet helt til venstre */
+    }
+}
+
+.rullebånd .coffee {
+    margin-inline: 4px;
+}
+
+.rullebånd .coffee-bean {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
 
 
 /* info sektionen på forsiden*/ 
@@ -118,7 +172,7 @@ aspect-ratio: 6/3;
 
     max-width: 100%;
     height: 100%;
-    margin: auto 12%;
+    margin: 6% 12%;
 
     display: flex;
     justify-content: space-around; /* placerer kolonnerne med plads imellem */
@@ -153,13 +207,11 @@ aspect-ratio: 6/3;
 .kolonne-billede img {
     width: 100%;
     height: 100%;
-    
 }
 
 .kolonne-tekst {
     width: 100%;
     height: 13rem;
-
 }
 
 .kolonne-tekst h2 {
@@ -178,7 +230,7 @@ aspect-ratio: 6/3;
     color: #fff;
     padding: 2rem;
     position: relative;
-    max-width: 100;
+    max-width: 100%;
     margin: auto 12%;
 }
 
@@ -229,13 +281,17 @@ aspect-ratio: 6/3;
 
 /* Nyhedsbrev sektion */ 
 
+#kork-boelge-mobil{
+    display: none;
+}
+
 #nyhedsbrev-forside {
-   max-width: 100%;
-   max-height: 800px;
-
-   position: relative;
-   z-index: 1;
-
+    display: flex;
+    max-width: 100%;
+    max-height: 800px;
+    margin-top: 10rem;
+    position: relative;
+    z-index: 1;
 }
 
 #nyhedsbrev-forside img{
@@ -244,19 +300,19 @@ aspect-ratio: 6/3;
 }
 
 .brev-illustration {
-    width: 60%;
-    height: 60%;
-
+    width: 43%;
+    height: auto;
+    transform: rotate(-13deg);
     position: absolute;
     z-index: 3;
-    bottom: 15%;
-
+    bottom: 35%;
+    left: 13%;
 }
 
 .brev-illustration img {
     width: 100%;
     height: 100%;
-
+    box-shadow: 20px 30px 15px rgb(0, 0, 0, 0.3);
 }
 
 .tilmeld-kasse {
@@ -269,11 +325,11 @@ aspect-ratio: 6/3;
     position: absolute;
     z-index: 5;
     bottom: 10%;
-    right: 5%; 
+    right: 10%; 
 
 
 /* glas-effekt */
-    border: solid #fff 3px;
+    border: solid #fff 2px;
     background: rgb(176, 137, 104, 0.4);
     background: linear-gradient(90deg, rgba(176, 137, 104, 0.4) 0%, rgba(111, 78, 55, 0.4) 100%);
     backdrop-filter: blur(0.5rem);
@@ -285,15 +341,10 @@ aspect-ratio: 6/3;
     color: #fff;
 }
 
-.tilmeld-indhold p {
-    font-family: "roboto", sans-serif;
-    font-size: 1.3rem;
-    color: #fff;
-}
-
 label {
     font-family: "roboto", sans-serif;
     font-size: 1.3rem;
+    color: #fff;
 
 }
 
@@ -331,41 +382,141 @@ label {
 
 /*Mobil max-width:500px Tablets · max-width:960px*/
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
+
+    #hero-container {
+        height: 100dvh;
+    }
+
+    #hero-logo {
+        width: 50%;
+    }
 
     #info-kasse {
         flex-direction: column;
-        padding: 1rem;
+        padding: 1rem; 
+    }
+
+    #info-indhold {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem; 
     }
 
     .info-kolonner {
         width: 100%;
-        padding: 1rem;
+        height: 100%;
+        padding: 0 2rem;
     }
 
+    #info-facade-billede {
+        height: auto;
+        margin-top: 1rem;
+    }
+
+    .info-sektion {
+        height: auto;
+        padding: 2rem 0;
+
+    }
+
+    /* ---- tre-kolonner sektion ---- */
+    
     #tre-kolonner-container {
+        width: 70%;
         flex-direction: column;
-        margin: auto 5%;
+        margin: 10% auto;
+        align-items: center;
     }
 
     .kolonne {
-        width: 100%;
-        margin: 1rem 0;
+        width: 75%;
+        margin: 2rem 0;
+    }
+
+
+
+    /* ----- pc og gæster ----- */
+
+    #forside-computer-afsnit{
+        padding: 1rem;
+        margin: auto 6%;
     }
 
     #forside-computer-indhold {
         flex-direction: column;
-        gap: 1rem;
+        height: auto;
+    }
+
+    .icon{
+        width: 4rem;
+    }
+
+    .forside-computer-col p{
+        padding-bottom: 1.2rem;
+    }
+
+    .forside-computer-billede {
+        margin: 0.3rem auto;
     }
 
     #computer-divider {
+        width: 100%;
+        height: 1px;
+    }
+
+    /* ---- nyhedsbrev sektion ---- */
+    #kork-boelge{
         display: none;
     }
 
-    .tilmeld-kasse {
+    #kork-boelge-mobil{
+        display: block;
+    }
+    
+    #nyhedsbrev-forside {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+
+    #nyhedsbrev-forside img{
+        height: auto;
+        object-fit: cover;
+        margin-top: 20%;
+    }
+
+    .brev-illustration {
         width: 80%;
-        right: 10%;
-        bottom: 5%;
+        bottom: 45%;
+        left: 10%;
+    }
+    .brev-illustration img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .tilmeld-kasse {
+        width: 60%;
+        bottom: 8%;
+        left: 20%;
+        line-height: 1.5rem;
+    } 
+
+    label {
+        font-size: 1.1rem;
+    }
+  
+    .cta-input{
+        padding: 0.8rem 1.7rem;
+        font-size: 1rem;
+    }
+
+    .cta-input:hover {
+        transition: none;
+        background-color: #738743;
+        color: #fff;
     }
 
 }

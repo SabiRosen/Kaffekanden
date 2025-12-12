@@ -29,11 +29,30 @@ h2{
     font-family: 'cookie'; 
     letter-spacing: 3px;
     font-weight: 300;
-    font-size: 2.5em;
+    font-size: 2.5rem;
 }
 
 p {
     font-family: 'roboto', sans-serif;
+}
+
+/*scroll bar*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(238, 223, 202, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(111, 78, 55, 0.8);
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(176, 137, 104);
 }
 
 /* Call to Action*/
@@ -64,7 +83,7 @@ p {
 
 .corner {
     position: absolute;
-    width: 60;
+    width: 8rem;
 }
 
 .tl {
@@ -122,4 +141,46 @@ p {
     font-family: 'roboto', sans-serif;
     font-size: 1.4em;
     line-height: 1.5;
+}
+
+
+@media screen and (max-width: 600px) {
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    .cta {
+        padding: 0.8rem 1.7rem;
+        font-size: 1.2rem;
+        margin-bottom: 8%;
+    }
+
+    .cta:hover {
+        transition: none;
+        background-color: #738743;
+        color: #fff;
+    }
+
+    .corner{
+        width: 6rem;
+    }
+
+    .tl {
+        top: 15px;
+        left: 15px;
+    }
+    .tr {
+        top: 15px;
+        right: 15px;
+    }
+    .bl {
+        bottom: 15px;
+        left: 15px;
+    }
+    .br {
+        bottom: 15px;
+        right: 15px;
+    }
+
+    
 }

@@ -24,6 +24,11 @@ header {
 header img {
     height: 2.5em;
     width: auto;
+    transition: 0.5s ease-in-out;
+}
+
+header img:hover{
+    transform: scale(1.1);
 }
 
 #desktopnav {
@@ -43,6 +48,12 @@ header img {
     color: white;
     font-size: 1.2vw; /* Skal muligvis kigges mere på*/
     font-family: 'roboto', sans-serif; 
+}
+
+#desktopnav ul li a:hover {
+    text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.5);
+    text-decoration: underline;
+    text-underline-offset: 6px;
 }
 
 /*------------Mobil nav-----------*/
@@ -201,7 +212,7 @@ footer {
 
 /*Mobil max-width:500px Tablets · max-width:960px*/
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
  
     #desktopnav {
         display: none;

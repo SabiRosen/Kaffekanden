@@ -62,33 +62,6 @@
 
 
 
-/* Mobilvisning: 2 kort pr. række */
-
-@media (max-width: 600px) {
-    .produkter {
-        padding: 2rem; 
-        gap: 1rem;
-    }
-
-    .produkt-kort {
-        width: 48%; 
-    }
-
-    .produkt-kort img {
-        height: 250px; 
-    }
-
-    .produkt-info p {
-        font-size: 0.8rem;
-    }
-
-    .produkt-info-top {
-        font-size: 1rem;
-    }
-}
-
-
-
 /* enkelt produkt side*/
 
 
@@ -274,4 +247,97 @@
 
 #relateret-kort-container .produkt-info-top {
     font-size: 1.1rem;
+}
+
+
+/* Mobilvisning: 2 kort pr. række */
+
+@media (max-width: 600px) {
+
+    /*produkter side*/
+
+    .produkter {
+        padding: 2rem; 
+        gap: 1rem;
+    }
+
+    .produkt-kort {
+        width: 48%; 
+        transition: none;
+    }
+
+    .produkt-kort img {
+        height: 250px; 
+        transition: none;
+    }
+
+    .produkt-kort:hover{
+        transform: none;
+        filter: none;
+        box-shadow: none;
+    }
+
+    .produkt-info p {
+        font-size: 0.78rem;
+    }
+
+    .produkt-info-top {
+        font-size: 0.8rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .produkt-kort .produkt-info-top:hover {
+        text-decoration: none;
+    }
+
+    /*Produktside --- enkelte produkter*/
+
+    .breadcrumb {
+        margin: 2rem 2rem;
+        font-size: 1.5rem;
+    }
+
+    #produkt-overview{
+        flex-direction: column;
+    }
+
+    #produkt-billede-area {
+        width: 100%;
+    }
+    
+    .produkt-thumbs::-webkit-scrollbar{
+        display: none;
+    }
+
+    .produkt-thumbs img {
+        transition: none;
+    }
+
+    .produkt-thumbs img:hover {
+        transform: none;
+    }
+
+    .pil {
+        display: none;
+    }
+
+    .produkt-info-area h3 {
+        font-size: 1.2rem;
+    }
+
+    #produkt-relateret{
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+
+    .produkt-info-area{
+        width: 100%;
+    }
+
+    .rel-pil{
+        display: none;
+    }
 }
