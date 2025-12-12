@@ -1,16 +1,11 @@
 @font-face {
     font-family: 'roboto';
-    src: url(fonts/Roboto-VariableFont_wdth\,wght.ttf)(format("truetype"));
-}
-
-@font-face {
-    font-family: 'amita';
-    src: url(fonts/Amita-Bold.ttf) (format("truetype"));
+    src: url(fonts/Roboto-regular.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'cookie';
-    src: url(fonts/Cookie-Regular.ttf) format("truetype");
+    src: url(fonts/Cookie-Regular.ttf) format('truetype');
 }
 
 
