@@ -98,13 +98,14 @@
 
 .silkeborgsbedste{
     position: absolute;
-    left: 41%;
     top: 70%;
-    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
 }
 
 .silkeborgsbedste img{
-    width: 12%;
+    width: 50%;
     transform: rotate(-5deg);
 }
 
@@ -365,13 +366,12 @@ label {
         margin-top: 5%;
     }
     .silkeborgsbedste{
-        top: 35%;
-        left: 79%
+        top: 37%;
+        left: 80%;
     }
 
     .silkeborgsbedste img{  /*Dont know whar to do with this....*/
-        width: 25%;
-        /* transform: rotate(-5deg); */
+        width: 100%;
     }
 
     /*Kaffekande billede*/
@@ -503,7 +503,6 @@ label {
         width: 85%;
         margin: 15% auto 2%;
         padding: 1rem;
-        overflow: hidden; /* ellers er der horizontal scrollbar*/
     }
 
     .historie-tekst p{
@@ -521,6 +520,10 @@ label {
 
     .silkeborgsbedste {
         top: 70%;
+    }
+    
+    .silkeborgsbedste img {
+        width: 43%;
     }
 
     #billedkande{

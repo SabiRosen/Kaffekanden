@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="headerfooter.css">
     <link rel="stylesheet" href="menukort.css">
     <script src="script.js" defer></script>
+    <script src="menu.js" defer></script>
     <link rel="icon" type="image/x-icon" href="/images/favikon.png">
     <title>Menukort</title>
 </head>
@@ -45,7 +46,610 @@
         <div id="overlay"></div>
 
         
-        <div id="varer">
+
+
+        <div class="dropdown">
+            <h1>Vores Menu</h1>
+
+            <button onclick="myFunction()" class="dropbtn">DRIKKELSE <img src="images/pilned.svg" alt=""></button>
+
+            <div class="drikindhold">
+                <div id="myDropdown" class="drik"> <!-- C:Hvorfor er der behov for id og class til samme sektion?-->
+                    <h2>KAFFE</h2>
+                    
+                    <p class="linje">
+                        <span class="navn">Double Espresso</span>       <!--C: Hvilken funktion har <span> helt præcis?-->
+                        <span class="dots"></span>
+                        <span class="pris">35 kr.</span>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Americano</span>
+                        <span class="dots"></span>
+                        <span class="pris">37 kr.</span>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Cortado</span>
+                        <span class="dots"></span>
+                        <span class="pris">42 kr.</span>
+                    </p>
+                    
+                    <p class="linje">
+                        <span class="navn">Flat White</span>
+                        <span class="dots"></span>
+                        <span class="pris">42 kr.</span>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Cappuccino alm/stor</span>
+                        <span class="dots"></span>
+                        <span class="pris">47/57 kr.</span>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Caffe Latte</span>
+                        <span class="dots"></span>
+                        <span class="pris">47/57 kr.</span>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Latte Macciato</span>
+                        <span class="dots"></span>
+                        <span class="pris">57 kr.</span>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Choco Latte</span>
+                        <span class="dots"></span>
+                        <span class="pris">55 kr.</span>
+                    </p>
+
+                </div>
+                
+                <img src="" alt="Streg">
+
+                <div id="myDropdown" class="drik">
+                    <h2>KOLDE DRIKKE</h2>
+
+                    <p class="linje">
+                        <span class="navn">Glas isvand/kande isvand</span>
+                        <span class="dots"></span>
+                        <span class="pris">10/30 kr.</span>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Juice brik</span>
+                        <span class="dots"></span>
+                        <span class="pris">37 kr.</span> 
+                        <p class="lilletekst">(Æble/Multi)</p>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Kildevand 50cl</span>
+                        <span class="dots"></span>
+                        <span class="pris">29 kr.</span>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Sodavand 33cl</span>
+                        <span class="dots"></span>
+                        <span class="pris">35 kr.</span>
+                        <p class="lilletekst">(Flere varianter)</p>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Øko Sodavand EGO 33cl</span>
+                        <span class="dots"></span>
+                        <span class="pris">35 kr.</span>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Cocio</span>
+                        <span class="dots"></span>
+                        <span class="pris">35 kr.</span>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Saft fra Sidlige Gårdbutik 25cl</span>
+                        <span class="dots"></span>
+                        <span class="pris">45 kr.</span> 
+                        <p class="lilletekst">(Flere varianter)</p>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Italiensk Sodavad</span>
+                        <span class="dots"></span>
+                        <span class="pris">39 kr.</span>
+                        <p class="lilletekst">(Flere varianter)</p>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Ramlösa</span>
+                        <span class="dots"></span>
+                        <span class="pris">39 kr.</span>
+                        <p class="lilletekst">(Citrus/Neutral)</p>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Ice Tea</span>
+                        <span class="dots"></span>
+                        <span class="pris">39 kr.</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="drikindhold">
+                <div class="drik">
+                    <h2>VARME DRIKKE</h2>
+
+                    <p class="linje">
+                        <span class="navn">Kop Thé, Kande Thé</span>
+                        <span class="dots"></span>
+                        <span class="pris">37/89 kr.</span>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Børne kakao</span>
+                        <span class="dots"></span>
+                        <span class="pris">37 kr.</span>
+                        <p class="lilletekst">(m. flødeskum og skumfiduser)</p>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Æblebryg</span>
+                        <span class="dots"></span>
+                        <span class="pris">47 kr.</span>
+                        <p class="lilletekst">(Krydret æblemost)</p>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Chai Latte</span>
+                        <span class="dots"></span>
+                        <span class="pris">50 kr.</span>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Varm kakao m. flødeskum</span>
+                        <span class="dots"></span>
+                        <span class="pris">50 kr.</span>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Varm kakao m. is</span>
+                        <span class="dots"></span>
+                        <span class="pris">60 kr.</span>
+                    </p>
+                </div>
+
+                <img src="" alt="Streg">
+
+                <div class="drik">
+                    <h2>LUSUS KOLDE DRIKKE</h2>
+
+                    <p class="linje">
+                        <span class="navn">Kold kakao</span>
+                        <span class="dots"></span>
+                        <span class="pris">45 kr.</span>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Affogato</span>
+                        <span class="dots"></span>
+                        <span class="pris">49 kr.</span>
+                        <p class="lilletekst">(Dobbelt espresso m. is)</p>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Iskaffe</span>
+                        <span class="dots"></span>
+                        <span class="pris">55 kr.</span>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Kold Chai Latte</span>
+                        <span class="dots"></span>
+                        <span class="pris">45 kr.</span>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Frappé iskaffe</span>
+                        <span class="dots"></span>
+                        <span class="pris">69 kr.</span>
+                        <p class="lilletekst">(m. blendet kugle is)</p>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Luksus iskaffe</span>
+                        <span class="dots"></span>
+                        <span class="pris">69 kr.</span>
+                        <p class="lilletekst">(m. flødeskum, sirup og drys)</p>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Milkshake m. is</span>
+                        <span class="dots"></span>
+                        <span class="pris">65 kr.</span>
+                    </p>
+                </div>
+
+            </div>
+
+
+        <!-- Ny dropdown med Øl -->
+
+            <button onclick="myFunction2()" class="dropbtn">ØL, VIN OG COCKTAILS <img src="images/pilned.svg" alt=""></button>
+
+            <div class="olindhold">
+                <div id="myDropdown" class="drik">
+                    <h2>ØL</h2>
+
+                    <p class="linje">
+                        <span class="navn">Flaske Tuborg</span>
+                        <span class="dots"></span>
+                        <span class="pris">39 kr.</span>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Flaske Tuborg Classic</span>
+                        <span class="dots"></span>
+                        <span class="pris">39 kr.</span>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Special Øl</span>
+                        <span class="dots"></span>
+                        <span class="pris">59 kr.</span>
+                        <p class="lilletekst">(Vi tilbyder også alkoholfri)</p>
+                    </p>
+                </div>
+                
+                <img src="" alt="Streg">
+
+                <div id="myDropdown" class="drik">
+                    <h2>VIN</h2>
+
+                    <p class="linje">
+                        <span class="navn">Huset hvidvin eller rosévin</span>
+                        <span class="dots"></span>
+                        <span class="pris">59/119 kr.</span>
+                        <p class="lilletekst">(Glas eller flaske)</p>
+                    </p>
+                </div>
+            </div>
+
+        
+
+            <div class="olindhold">
+                <div class="drik">
+                    <h2>SOMMER COCTAILS</h2>
+                    <p class="linje">
+                        <span class="navn">Jordbær Bramble</span>
+                        <span class="dots"></span>
+                        <span class="pris">79 kr.</span>
+                        <p class="lilletekst">(Gin 4cl, jordbærsirup, sugar can sirup, danskvand)</p>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Rabarber Bramble</span>
+                        <span class="dots"></span>
+                        <span class="pris">79 kr.</span>
+                        <p class="lilletekst">(Gin 4cl, citronsaft, rababersirup, danskvand)</p>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Gin Hass</span>
+                        <span class="dots"></span>
+                        <span class="pris">79 kr.</span>
+                        <p class="lilletekst">(Gin 4cl, mangosirup, øko ingefær/lemon sodavand)</p>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Filur</span>
+                        <span class="dots"></span>
+                        <span class="pris">79 kr.</span>
+                        <p class="lilletekst">(Vodka 4cl, appelsinjuice, jordbærsirup, faxe kondi)</p>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Aperol Spritz</span>
+                        <span class="dots"></span>
+                        <span class="pris">79 kr.</span>
+                        <p class="lilletekst">(Aperol 4cl, prosecco 7cl, danskvand)</p>
+                    </p>
+                </div>
+
+                <img src="" alt="Streg">
+
+                <div class="drik">
+                    <h2>VINTER COCKTAILS</h2>
+
+                    <p class="linje">
+                        <span class="navn">Varm kakao m. Baileys</span>
+                        <span class="dots"></span>
+                        <span class="pris">79 kr.</span>
+                        <p class="lilletekst">(Kakao, flødeskum, Baileys 2cl)</p>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Kaffekandens special iskaffe</span>
+                        <span class="dots"></span>
+                        <span class="pris">79 kr.</span>
+                        <p class="lilletekst">(Iskaffe, Cuba Caramel 2cl, Baileys 2cl)</p>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">White Russian</span>
+                        <span class="dots"></span>
+                        <span class="pris">79 kr.</span>
+                        <p class="lilletekst">(Mælk, Kahule 2cl, Vodka 2cl)</p>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Flat White Martini</span>
+                        <span class="dots"></span>
+                        <span class="pris">79 kr.</span>
+                        <p class="lilletekst">(Espressosshot, Baileys 4cl, Vodka 2cl)</p>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Irish Coffee</span>
+                        <span class="dots"></span>
+                        <span class="pris">79 kr.</span>
+                        <p class="lilletekst">(Americano, brin farin, Whiskey 4cl, flødeskum)</p>
+                    </p>
+                </div>
+
+            </div>
+
+            <!--Ny dropdown med menukort-->
+
+            <button onclick="myFunction3()" class="dropbtn">MENUKORT <img src="images/pilned.svg" alt=""></button>
+
+            <div class="menuindhold">
+                <div id="myDropdown" class="drik">
+                    <h2>BRØD</h2>
+                    <h4>Bolle 
+                        <br>
+                        <p>(Vælg mellem lys, spelt eller grov durum)</p>
+                    </h4>
+                    <p class="linje">
+                        <span class="navn">Med smør</span>
+                        <span class="dots"></span>
+                        <span class="pris">35 kr.</span>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Med ost og rød peber </span>
+                        <span class="dots"></span>
+                        <span class="pris">42 kr.</span>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Med rullepølse, sky og rødløg</span>
+                        <span class="dots"></span>
+                        <span class="pris">42 kr.</span>
+                    </p>
+
+                    <h4>Gultenfri bolle</h4>
+                    <p class="linje">
+                        <span class="navn">Med smør</span>
+                        <span class="dots"></span>
+                        <span class="pris">45 kr.</span>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Med ost og rød peber</span>
+                        <span class="dots"></span>
+                        <span class="pris">50 kr.</span>
+                    </p>
+
+                    <h4>Børnebolle</h4>
+                    <p class="linje">
+                        <span class="navn">Med lys eller mørk pålægschokolade</span>
+                        <span class="dots"></span>
+                        <span class="pris">35 kr.</span>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Med nutellar</span>
+                        <span class="dots"></span>
+                        <span class="pris">35 kr.</span>
+                    </p>
+
+                    <h4>Franskbrød eller rugbolle</h4>
+                    <p class="linje">
+                        <span class="navn">Med smør</span>
+                        <span class="dots"></span>
+                        <span class="pris"> 40 kr.</span>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Med ost og rød peber </span>
+                        <span class="dots"></span>
+                        <span class="pris">59 kr.</span>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Med rullepølse, sky og rødløg</span>
+                        <span class="dots"></span>
+                        <span class="pris">59 kr.</span>
+                    </p>
+                </div>
+                
+                <img src="" alt="Streg">
+
+                <div id="myDropdown" class="drik">
+                    <h2>   SANDWICH</h2>
+                    <p class="linje">
+                        <span class="navn">Kylling og Bacon</span>
+                        <span class="dots"></span>
+                        <span class="pris">89 kr.</span>
+                        <p class="lilletekst">Kylling (fra Post Grillen), bacon, mayo, salat, tomat, løg og karrydressing</p>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Skinke og Ost</span>
+                        <span class="dots"></span>
+                        <span class="pris">89 kr.</span>
+                        <p class="lilletekst">Luksus skink, ost, pesto, salat, tomat, løg</p>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Laksesanswich</span>
+                        <span class="dots"></span>
+                        <span class="pris">89 kr.</span>
+                        <p class="lilletekst">Laksesalat, mayo, salat, tomat, løg og valgfri dressing</p>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Æggesandwich</span>
+                        <span class="dots"></span>
+                        <span class="pris">89 kr.</span>
+                        <p class="lilletekst">Æggesalat, bacon, mayo, salat, tomat, løg og karrydressing</p>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Hønsesandwich</span>
+                        <span class="dots"></span>
+                        <span class="pris">89 kr.</span>
+                        <p class="lilletekst">Hønsesalat, bacon, mayo, salat, agurk, løg og valgfri dressing</p>
+                    </p>
+
+                </div>
+            </div>
+
+        
+
+            <div class="menuindhold">
+                <div class="drik">
+                    <h2>CROISSANT</h2>
+
+                    <p class="linje">
+                        <span class="navn">Klassisk smør croissant</span>
+                        <span class="dots"></span>
+                        <span class="pris">30 kr.</span>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Med hasselnød creme</span>
+                        <span class="dots"></span>
+                        <span class="pris">35 kr.</span>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Med mandel creme</span>
+                        <span class="dots"></span>
+                        <span class="pris">35 kr.</span>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Med hønsesalat</span>
+                        <span class="dots"></span>
+                        <span class="pris">79 kr.</span>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Med æggesalat</span>
+                        <span class="dots"></span>
+                        <span class="pris">79 kr.</span>
+                    </p>
+
+                    <p class="linje">
+                        <span class="navn">Med laksesalat</span>
+                        <span class="dots"></span>
+                        <span class="pris">79 kr.</span>
+                    </p>
+                </div>
+
+                <img src="" alt="Streg">
+
+                <div class="drik">
+                    <h2>TIL DEN SØDE TAND</h2>
+                    <p>Varm kakao m. baileys ........................................... 79 kr. 
+                        <br>(Kakao, flødeskum, baileys 2cl)</p>
+                    <p>Kaffekanden special iskaffe ........................................... 79 kr. 
+                        <br>(Iskaffe, Cuba Caramel 2cl, baileys 2cl)</p>
+                    <p>White Russian ........................................... 79 kr. 
+                        <br>(Mælk, Kahule 2cl, vodka 2cl)</p>
+                    <p>Flat White Martini ........................................... 79 kr. 
+                        <br>(Espressoshot, baileys 4cl, vodka 2cl)</p>
+                    <p>Irish Coffee ........................................... 79 kr. 
+                        <br>(Americano, brun farin, whiskey 4 cl, flødeskum)</p>
+                </div>
+
+            </div>
+
+
+        <!--Ny dropdown med jul-->
+
+            <button onclick="myFunction4()" class="dropbtn">JULEMENU</button>
+
+            <div class="julindhold">
+                <div id="myDropdown" class="drik">
+                    <h2>ØL</h2>
+                    <p>Flaske Tuborg ...................................... 39 kr.</p>
+                    <p>Flaske Tuborg Classic ..................... 39 kr.</p>
+                    <p>Special øl ............................................. 59 kr.
+                        <br>(Vi tilbyder også alkoholfri)</p>
+                </div>
+                
+                <img src="" alt="Streg">
+
+                <div id="myDropdown" class="drik">
+                    <h2>VIN</h2>
+                    <p>Husets hvidvin eller rosévin ....... 59/119 kr.
+                        <br> (Glas eller flaske)</p>
+                </div>
+            </div>
+
+        
+
+            <div class="julindhold">
+                <div class="drik">
+                    <h2>SOMMER COCTAILS</h2>
+                    <p>Jordbær Bramble ....................... 79 kr.
+                        <br> (Gin 4cl, jordbærsirup, sugar can sirup, danskvand)</p>
+                    <p>Rabarber Bramble ....................................... 79 kr. 
+                        <br>(Gin 4cl, citronsaft, rabaversirup, danskvand)</p>
+                    <p>Gin Hass ........................................... 79 kr. 
+                        <br>(Gin 4cl, mangosirup, øko ingefær/lemon sodavand)</p>
+                    <p>Filur ........................................... 79 kr. 
+                        <br>(Vodka 4cl, appelsinjuicce, jordbærsirup, faxe kondi)</p>
+                    <p>Aperol Spritzs ........................................... 79 kr. 
+                        <br>(Aperol 4cl, prosecco 7cl, danskvand)</p>
+                    
+                </div>
+
+                <img src="" alt="Streg">
+
+                <div class="drik">
+                    <h2>VINTER COCKTAILS</h2>
+                    <p>Varm kakao m. baileys ........................................... 79 kr. 
+                        <br>(Kakao, flødeskum, baileys 2cl)</p>
+                    <p>Kaffekanden special iskaffe ........................................... 79 kr. 
+                        <br>(Iskaffe, Cuba Caramel 2cl, baileys 2cl)</p>
+                    <p>White Russian ........................................... 79 kr. 
+                        <br>(Mælk, Kahule 2cl, vodka 2cl)</p>
+                    <p>Flat White Martini ........................................... 79 kr. 
+                        <br>(Espressoshot, baileys 4cl, vodka 2cl)</p>
+                    <p>Irish Coffee ........................................... 79 kr. 
+                        <br>(Americano, brun farin, whiskey 4 cl, flødeskum)</p>
+                </div>
+
+            </div>
+
+            
+        </div>
+
+        
+
+
+
+
+
+
+        <!-- <div id="varer">
             <div class="menuoverskrift">
             <h1>VORES MENU</h1>
             </div>
@@ -70,7 +674,7 @@
                 <img src="images/pilned.svg" alt="">
             </div>
 
-        </div>
+        </div> -->
        
         <div id="nyheder">
             <h2>Nyheder</h2>

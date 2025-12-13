@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="shop.css">
     <link rel="stylesheet" href="headerfooter.css">
+    <script src="produkter.js" defer></script>
     <script src="script.js" defer></script>
     <link rel="icon" type="image/x-icon" href="/images/favikon.png">
     <title>Produkter</title>
@@ -49,11 +50,29 @@
             </div>
         </div>
 
-        <div id="sortering">
-            
-        </div>
+        <!--     SORTERINGS FEATURE     -->
 
-        <br><br><br><br><br><br><br>
+        <div id="sortering-container">
+
+            <button id="scroll-left" class="scroll-knap"><img src="images/pilvenstre.svg" alt="pil"></button>
+
+            <div id="sortering">
+
+                <button id="alle" class="active">ALLE</button>
+                <button id="kaffe">KAFFE</button>
+                <button id="the">THÉ</button>
+                <button id="soede-sager">SØDE SAGER</button>
+                <button id="drik">DRIKKEVARE</button>
+                <button id="gave">GAVEKURVE</button>
+
+            </div>
+
+             <button id="scroll-right" class="scroll-knap"><img src="images/pilhøjre.svg" alt="pil"></button>
+
+        </div>
+    
+        <!-- ***************************** -->
+
 
         <div class="produkter">
             <a href="produktside.html" class="produkt-kort kaffe">
@@ -230,6 +249,19 @@
                 </div>
             </a>
 
+            <a href="produktside.html" class="produkt-kort the">
+                
+                    <img src="images/loes-the-moerkgroen.jpg" alt="produkt billede">
+                
+                <div class="produkt-info">
+                    <div class="produkt-info-top">
+                        <h3>Løs Grøn Thé</h3>
+                        <h3>min 40 kr.</h3>
+                    </div>
+                    <p>Løs urte thé. Fås i flere varianter.</p>
+                </div>
+            </a>
+
             <a href="produktside.html" class="produkt-kort kaffe">
                 
                     <img src="images/kaffe-viborg-stor.jpg" alt="produkt billede">
@@ -253,6 +285,32 @@
                         <h3>125 kr.</h3>
                     </div>
                     <p>Cocoture fyldte chokolader.</p>
+                </div>
+            </a>
+
+            <a href="produktside.html" class="produkt-kort the">
+                
+                    <img src="images/loes-the-lysgroen.jpg" alt="produkt billede">
+                
+                <div class="produkt-info">
+                    <div class="produkt-info-top">
+                        <h3>Løs Rooibush Thé</h3>
+                        <h3>min 45 kr.</h3>
+                    </div>
+                    <p>Løs Rooibush thé.</p>
+                </div>
+            </a>
+
+            <a href="produktside.html" class="produkt-kort the">
+                
+                    <img src="images/loes-the-sort.jpg" alt="produkt billede">
+                
+                <div class="produkt-info">
+                    <div class="produkt-info-top">
+                        <h3>Løs Sort Thé</h3>
+                        <h3>min 40 kr.</h3>
+                    </div>
+                    <p>Løs Sort thé. Fås i flere varianter.</p>
                 </div>
             </a>
 
@@ -280,7 +338,58 @@
                     <p>Fås i flere varianter</p>
                 </div>
             </a>
+
+            <a href="produktside.html" class="produkt-kort drik">
+                
+                    <img src="images/kakao.jpg" alt="produkt billede">
+                
+                <div class="produkt-info">
+                    <div class="produkt-info-top">
+                        <h3>Kakao drik</h3>
+                        <h3>8 kr.</h3>
+                    </div>
+                    <p>Økologisk kakao drik</p>
+                </div>
+            </a>
+
+            <a href="produktside.html" class="produkt-kort soede-sager">
+                
+                    <img src="images/kudsk-1.jpg" alt="produkt billede">
+                
+                <div class="produkt-info">
+                    <div class="produkt-info-top">
+                        <h3>Kudsk cookies</h3>
+                        <h3>69kr.</h3>
+                    </div>
+                    <p>Kudsk cookies tyk jul. Fås i flere varianter.</p>
+                </div>
+            </a>
+
+            <a href="produktside.html" class="produkt-kort the">
+                
+                    <img src="images/loes-the-brun.jpg" alt="produkt billede">
+                
+                <div class="produkt-info">
+                    <div class="produkt-info-top">
+                        <h3>Løs Urte Thé</h3>
+                        <h3>min 45 kr.</h3>
+                    </div>
+                    <p>Løs urte thé. Fås i flere varianter.</p>
+                </div>
+            </a>
             
+            <a href="produktside.html" class="produkt-kort the">
+                
+                    <img src="images/thebrev-blaa.jpg" alt="produkt billede">
+                
+                <div class="produkt-info">
+                    <div class="produkt-info-top">
+                        <h3>A.C. Perch's thé</h3>
+                        <h3>15 kr.</h3>
+                    </div>
+                    <p>A.C. Perch's thé breve i fire varianter.</p>
+                </div>
+            </a>
 
         </div>
 
