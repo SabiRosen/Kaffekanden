@@ -249,3 +249,45 @@ footer {
         display: block;
     }
 }
+
+
+/*TABLET STØRRELSE*/
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+
+
+    header img:hover{
+        transform: none;
+    }
+
+    #desktopnav ul li a {
+    font-size: 1.5vw; /* Skal muligvis kigges mere på*/
+    }
+
+    #desktopnav ul li a:hover {
+        text-shadow: none;
+        text-decoration: none;
+    }
+
+    /*FOOTER*/
+
+    .ikoner, #socialmedia {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin: 2.5rem 0;
+        max-width: 300px;
+    }
+
+    .ikoner img, #socialmedia img {
+        height: 50px;
+        width: auto;
+        aspect-ratio: 1 / 1;
+    }
+
+    #kort {
+        height: 200px;
+    }
+
+
+}
