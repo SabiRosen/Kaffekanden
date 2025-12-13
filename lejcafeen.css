@@ -162,7 +162,7 @@
 
     #lejikoner {
         width: 100%;
-        margin: 0;
+        margin: 2% auto 0 0;
         padding: 0.7rem 0.5rem;
         justify-content: space-between;
     }
@@ -173,7 +173,7 @@
     }
 
     #lejfittyfitty {
-        width: 80%;
+        width: 90%;
         height: 100%;   
         
         flex-direction: column;

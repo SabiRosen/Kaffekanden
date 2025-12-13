@@ -316,6 +316,27 @@ label {
 
 
 @media screen and (max-width: 600px) {
+
+    /*Fifty fifty afsnit*/
+
+    .fifty-fifty{
+        min-width: 90%;
+        margin: 15% auto 0;
+    }
+
+    .fifty-fifty, .fifty-fifty-billede img{
+        display: block;
+    }
+    
+    .fifty-indhold, .fifty-indhold-kork, .fifty-fifty-billede{
+        width: 100%;
+    }
+
+    .fifty-indhold p, .fifty-indhold-kork p{
+        font-size: 1rem;
+    }
+
+
     /*-----Om caféen-----*/
 
     /*Vores historie afsnit*/
@@ -357,19 +378,6 @@ label {
     .cta{
         top: 95%;
         left: 4%;
-    }
-
-    /*fitty fitty*/
-    .fifty-fifty, .fifty-fifty-billede img{
-        display: block;
-    }
-    
-    .fifty-indhold, .fifty-indhold-kork, .fifty-fifty-billede{
-        width: 100%;
-    }
-
-    .fifty-indhold p, .fifty-indhold-kork p{
-        font-size: 1rem;
     }
 
 

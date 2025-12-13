@@ -423,9 +423,9 @@ label {
     /* ---- tre-kolonner sektion ---- */
     
     #tre-kolonner-container {
-        width: 70%;
+        width: 90%;
         flex-direction: column;
-        margin: 10% auto;
+        margin: 15% auto;
         align-items: center;
     }
 
@@ -440,7 +440,7 @@ label {
 
     #forside-computer-afsnit{
         padding: 1rem;
-        margin: auto 6%;
+        margin: auto 5%;
     }
 
     #forside-computer-indhold {
