@@ -3,7 +3,7 @@
 
 .fifty-fifty {
     display: flex;
-    max-width: 70%;
+    max-width: 75%;
     margin: 3% auto 0;
     justify-content: center;
     /* background-color: #6f4e37; */
@@ -37,8 +37,8 @@
 
 .fifty-indhold p{
     font-family: 'roboto', sans-serif;
-    font-size: 1.3vw;
-    line-height: 1.5em;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
 }
 
 /*kork baggrunds fifty fifty*/
@@ -49,6 +49,7 @@
     width: 50%;
     background-image: url(images/kork-baggrund.jpg);
     color: white;
+    text-shadow: 2px 4px 4px rgb(0, 0, 0, 0.6);
 }
 
 .fifty-kork-baggrund img {
@@ -63,8 +64,8 @@
 
 .fifty-indhold-kork p {
     font-family: 'roboto', sans-serif;
-    font-size: 1.3vw;
-    line-height: 1.5em;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
 }
 
 
@@ -73,9 +74,10 @@
 
 
 #historie-container{ 
-    width: 60%;
+    width: 80%;
+    max-width: 1200px;
     display: flex;
-    padding: 4rem 4rem;
+    padding: 3rem 3rem;
     border: #6f4e37 solid 2px;
     border-radius: 3rem;
     margin: 10% auto 3%;
@@ -90,6 +92,8 @@
 
 .historie-billede img{
     width: 100%;
+    aspect-ratio: 6/5;
+    object-fit: cover;
 }
 
 .silkeborgsbedste{
@@ -111,6 +115,7 @@
 .historie-tekst p{
     padding-top: 2%;
     padding-bottom: 2%;
+    font-size: 1.1rem;
 }
 
 
@@ -351,12 +356,16 @@ label {
         width: 100%;
     }
 
+    .historie-billede img{
+        aspect-ratio: 1/1;
+    }
+
     .historie-tekst{
         width: 100%;
         margin-top: 5%;
     }
     .silkeborgsbedste{
-        top: 42%;
+        top: 35%;
         left: 79%
     }
 
@@ -445,7 +454,84 @@ label {
         color: #fff;
     }
 
+}
 
+/* tablet størrelse ------------------------------------------------*/
 
-    
+@media screen and (min-width: 601px) and (max-width: 1000px){
+    .fifty-fifty{
+        max-width: 85%;
+    }
+
+    .fifty-indhold p, .fifty-indhold-kork p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    /*nyhedsbrev sektion*/
+
+    .brev{
+        bottom: 16%;
+    }
+
+    .brev img{
+        width: 30%;
+    }
+
+    .tilmeld-kasse{
+        width: 32%;
+    }
+
+    .tilmeld-indhold h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta-input{
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+
+    .cta-input:hover {
+        transition: none;
+        background-color: #738743;
+        color: #fff;
+    }
+
+    /* om caféen afsnit ----------------*/
+
+    #historie-container{
+        width: 85%;
+        margin: 15% auto 2%;
+        padding: 1rem;
+        overflow: hidden; /* ellers er der horizontal scrollbar*/
+    }
+
+    .historie-tekst p{
+        font-size: 1rem;
+    }
+
+    .historie-billede {
+        margin: 0;
+        padding: 2rem;
+    }
+
+    .historie-billede img {
+        aspect-ratio: 1/1;
+    }
+
+    .silkeborgsbedste {
+        top: 70%;
+    }
+
+    #billedkande{
+        width: 90%;
+        height: auto;
+        overflow: hidden;
+    }
+    .cta{
+        top: 75%;
+        left: 65%;
+        padding: 1rem 1.5rem;
+        font-size: 1.2rem;
+    }
 }
