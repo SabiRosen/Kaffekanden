@@ -380,7 +380,7 @@ label {
 }
 
 
-/*Mobil max-width:500px Tablets · max-width:960px*/
+/*MOBIL STØRRELSE ---- max-width:500px */
 
 @media screen and (max-width: 600px) {
 
@@ -400,7 +400,7 @@ label {
     #info-indhold {
         flex-direction: column;
         gap: 1rem;
-        padding: 2rem; 
+        padding: 1.5rem; 
     }
 
     .info-kolonner {
@@ -409,9 +409,22 @@ label {
         padding: 0 2rem;
     }
 
+    .info-hoejre {
+        order: 1; /*den højre info kolonne bliver vist øverst - fungerer kun med flexboks*/
+    }
+
+    .info-venstre{
+        order: 2;
+    }
+
+    .aabningstid{
+        order: 2;
+    }
+
     #info-facade-billede {
         height: auto;
         margin-top: 1rem;
+        order: 1; /*viser billedet før åbningstider*/
     }
 
     .info-sektion {
@@ -478,6 +491,7 @@ label {
         flex-direction: column;
         height: auto;
         width: 100%;
+        margin-top: 1rem;
     }
 
 
@@ -502,7 +516,10 @@ label {
         bottom: 8%;
         left: 20%;
         line-height: 1.5rem;
-    } 
+    }
+    .tilmeld-kasse h2{
+        font-size: 1.5rem;
+    }
 
     label {
         font-size: 1.1rem;
@@ -519,4 +536,114 @@ label {
         color: #fff;
     }
 
+}
+
+/*TABLET STØRRELSE -------------------------------- · max-width:960px*/
+
+@media screen and (min-width: 601px) and (max-width: 1000px){
+
+    #hero-container {
+        height: 100dvh;
+    }
+
+    #hero-logo {
+        width: 30%;
+    }
+
+    /*Info afsnit*/
+
+    #info-kasse {
+        padding: 1rem; 
+    }
+
+    #info-indhold {
+        gap: 0.5rem;
+        padding: 2rem; 
+    }
+
+    .info-kolonner {
+        width: 100%;
+        height: 100%;
+        padding: 0 2rem;
+    }
+
+   #info-facade-billede {
+        height: auto;
+        margin-bottom: 2rem;
+   }
+
+   #info-facade-billede img {
+        aspect-ratio: 5/3;
+   }
+
+    .info-sektion {
+        height: auto;
+        padding: 1.5rem 0;
+
+    }
+
+    .info-sektion p {
+        font-size: 1.15rem;
+    }
+
+    /*  tre kolonner afsnit */
+
+     #tre-kolonner-container {
+        width: 90%;
+        margin: 8% auto;
+        align-items: center;
+    }
+
+    .kolonne {
+        width: 75%;
+        margin: 1.5rem 1rem;
+    }
+
+    /*computerfri / vores gæster siger afsnit*/
+
+    #forside-computer-afsnit{
+        padding: 1rem;
+        margin: auto 5%;
+    }
+
+    #forside-computer-indhold {
+        height: auto;
+    }
+
+    .forside-computer-col p{
+        padding-bottom: 1.2rem;
+    }
+
+    .forside-computer-billede {
+        margin: 0rem auto;
+    }
+
+    /*nyhedsbrev sektion*/
+
+    #nyhedsbrev-forside {
+        margin-top: 5rem;
+    }
+
+    .tilmeld-kasse {
+        width: 30%;
+        bottom: 8%;
+        left: 62%;
+        line-height: 1.5rem;
+    } 
+
+    .tilmeld-kasse h2{
+        font-size: 1.8rem;
+    }
+
+    .cta-input{
+        padding: 1rem 1.8rem;
+        font-size: 1rem;
+    }
+
+    .cta-input:hover {
+        transition: none;
+        background-color: #738743;
+        color: #fff;
+    }
+    
 }
