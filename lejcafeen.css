@@ -252,3 +252,46 @@
         width: 40%;
     }
 }
+
+/* TABLET STØRRELSE -----------------*/
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+
+     #lejikoner {
+        width: 90%;
+        padding: 1rem 1rem;
+        justify-content: space-evenly;
+        margin: auto;
+    }
+    
+
+    #lejfittyfitty{
+        width: 90%;
+        margin: 8% auto;
+        justify-content: center;
+        gap: 5%;
+    }
+
+    /* PRAKTISK INFO BOKS */
+
+    #praktiskinfo-container{
+        padding: 2.5rem;
+        width: 85%;
+    }
+
+    .infoboks {
+        width: 100%;
+    }
+
+    /* KONTAKT OS*/
+
+    #kontakt-container{
+            width: 75%;
+    }
+
+    .kontaktinfo p{
+    font-size: 1.3rem;
+    line-height: 3rem;
+    }
+    
+}
