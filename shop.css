@@ -344,3 +344,75 @@
         display: none;
     }
 }
+
+/* Tablet størrelse ------------------------------------------------------------*/
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+    .produkter {
+    gap: 1rem;
+    padding: 2rem;
+    max-width: 950px;
+}
+
+.produkt-kort {
+    display: block;
+    margin-bottom: 1.5rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(33.333% - 0.67rem);
+
+}
+
+.produkt-kort:hover {
+    transform: none;
+    box-shadow: none;
+    filter: none;
+}
+
+.produkt-kort .produkt-info-top:hover {
+    text-decoration: none;
+}
+
+.produkt-info p {
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+.produkt-info-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+/*enkelt produkt side*/
+
+.breadcrumb{
+    margin: 2rem 2rem;
+}
+
+.produkt-thumbs::-webkit-scrollbar{
+    display: none;
+}
+
+.produkt-thumbs img {
+    transition: none;
+}
+
+.produkt-thumbs img:hover {
+    transform: none;
+}
+
+.pil {
+    display: none;
+}
+
+.rel-pil{
+    display: none;
+}
+
+#produkt-relateret{
+        margin-bottom: 4rem;
+    }
+
+}
