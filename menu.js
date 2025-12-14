@@ -22,7 +22,6 @@ function myFunction2() {
     panels.forEach(panel => panel.classList.toggle('show'));
 }
 
-// Luk dropdown, når der klikkes udenfor
 document.addEventListener('click', function(e) {
     const dropdown = document.querySelector('.dropdown'); 
 
@@ -41,7 +40,6 @@ function myFunction3() {
     panels.forEach(panel => panel.classList.toggle('show'));
 }
 
-// Luk dropdown, når der klikkes udenfor
 document.addEventListener('click', function(e) {
     const dropdown = document.querySelector('.dropdown'); 
 
@@ -59,7 +57,6 @@ function myFunction4() {
     panels.forEach(panel => panel.classList.toggle('show'));
 }
 
-// Luk dropdown, når der klikkes udenfor
 document.addEventListener('click', function(e) {
     const dropdown = document.querySelector('.dropdown'); 
 
