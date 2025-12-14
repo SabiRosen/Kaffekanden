@@ -325,6 +325,12 @@
 
     /*produkter side*/
 
+    #sortering-container{
+        width: 100%;
+
+    }
+
+
     .produkter {
         padding: 2rem; 
         gap: 1rem;
