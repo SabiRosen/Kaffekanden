@@ -1,3 +1,4 @@
+
 function myFunction() {
     const panels = document.querySelectorAll('.drikindhold');
     panels.forEach(panel => panel.classList.toggle('show'));
