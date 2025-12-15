@@ -14,6 +14,7 @@
 
 html{
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -31,7 +32,54 @@ p {
     font-family: 'roboto', sans-serif;
 }
 
-/*scroll bar*/
+
+/* TIL TOPPEN FEATURE*/
+
+.til-toppen {  /* selve kassen*/
+    display: none; 
+    height: 150px;
+    width: 100px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    bottom: 2%;
+    right: 3%;
+    position: fixed;
+    animation: apear 1s linear;
+    z-index: 15;
+
+    }
+    
+    @keyframes apear {
+        from { opacity: 0;  
+    }
+        to { opacity: 1;     
+    }
+    }
+    
+    #til-toppen-pil {    /* kassen med pilen */ 
+        display: flex;
+        background-color: #738743;
+        width: 80px;
+        height: 80px;
+        justify-content: center;
+        border-radius: 50%;
+        align-items: center;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    
+    .til-toppen h4 { 
+        font-size: 18px;
+        font-family: Arial, sans-serif;
+        color: #738743;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);  
+        margin-top: 1rem; 
+    }
+    
+
+
+/*scroll bar -----------------------------------------*/
 
 ::-webkit-scrollbar {
     width: 10px;

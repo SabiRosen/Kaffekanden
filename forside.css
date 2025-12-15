@@ -19,7 +19,6 @@
     position: relative;
 }
 
-
 #hero-overlay {
     position: absolute;
     width: 100%;
@@ -30,6 +29,7 @@
 
 }
 
+
 /* hero-logo */
 
 #hero-logo {
@@ -39,6 +39,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 20%;
+
 }
 
 #hero-logo img {
@@ -49,49 +50,38 @@
 /* animationsbanner*/ 
 
 
-.rullebånd {
+.rullebaand {
     height: 9%;
 
     background-color: #6F4E37; 
     color: #FFFFFF; 
     font-size: 1.2rem;
-    font-family: 'roboto', sans-serif;
-    overflow: hidden; /* skjuler alt indhold, der går ud over containerens grænser */
-    user-select: none; /* forhindrer markering af tekst */
-
-    --gap: 10px; /* definerer en CSS-variabel for mellemrum mellem gentaget indhold */
+    font-family: "roboto", sans-serif;
+    
     display: flex;
-    gap: var(--gap); /* anvender mellemrum mellem gentaget indhold */
+    overflow: hidden; 
+    user-select: none; /* forhindrer markering af tekst */
+    --gap: 4px; 
+     gap: var(--gap); 
 
-}
+} 
 
-.rullebånd ul {
+.rullebaand ul {
     list-style: none;
     flex-shrink: 0; /* bredden er udvidet efter behov */
-    min-width: 100%; /* dækker hele bredden, hvis der er nok indhold*/
+    
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: var(--gap);
 
-    animation: scroll 30s linear infinite; /* anvender scroll animationen */    
 }
 
-.rullebånd:hover ul {
-    animation-play-state: paused; /* pauser animationen ved hover */
-}
-
-@keyframes scroll {
-    to {
-        transform: translateX(calc(-50% - 20px)); /* flyt indholdet helt til venstre */
-    }
-}
-
-.rullebånd .coffee {
+.rullebaand .coffee {
     margin-inline: 4px;
 }
 
-.rullebånd .coffee-bean {
+.rullebaand .coffee-bean {
     width: 24px;
     height: 24px;
     vertical-align: middle;
@@ -138,9 +128,9 @@
 }
 
 .info-sektion p { 
-font-family: 'roboto', sans-serif;
-font-size: 1.3rem;
-line-height: 2.5rem;
+    font-family: 'roboto', sans-serif;
+    font-size: 1.3rem;
+    line-height: 2.5rem;
 }
 
 .info-aabning {
@@ -148,18 +138,17 @@ line-height: 2.5rem;
    justify-content: space-between;
 }
 
-
 #info-facade-billede {
-width: 100%;
-height: 50%;
+    width: 100%;
+    height: 50%;
 
 }
 
 #info-facade-billede img {
-width: 100%;
-height: 100%;
-object-fit: cover;
-aspect-ratio: 6/3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 6/3;
 }
 
 

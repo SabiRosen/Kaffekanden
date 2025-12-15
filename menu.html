@@ -18,7 +18,7 @@
         </a>
         <nav id="desktopnav">
             <ul>
-                <li><a href="menu.html">MENUKORT</a></li>
+                <li><a href="menu.html" class="active-nav">MENUKORT</a></li>
                 <li><a href="shop.html">PRODUKTER</a></li>
                 <li><a href="arrangementer.html">ARRANGEMENTER</a></li>
                 <li><a href="lej-café.html">LEJ CAFÉEN</a></li>
@@ -30,7 +30,7 @@
             <img src="images/burger.svg" alt="menu ikon" id="burger">
             <div id="mobil-menu">
                 <ul>
-                    <li><a href="menu.html">MENUKORT</a></li>
+                    <li><a href="menu.html" class="active-nav">MENUKORT</a></li>
                     <li><a href="shop.html"> PRODUKTER</a></li>
                     <li><a href="arrangementer.html">ARRANGEMENTER</a></li>
                     <li><a href="lej-café.html">LEJ CAFÉEN</a></li>
@@ -41,8 +41,9 @@
 
     </header>
 
-    <main>
-        
+    <main> 
+        <div id="til-toppen"></div> <!-- til toppen feature-->
+
         <div id="overlay"></div>
 
         
@@ -51,10 +52,10 @@
         <div class="dropdown">
             <h1>Vores Menu</h1>
 
-            <button onclick="myFunction()" class="dropbtn">DRIKKELSE <img src="images/pilned.svg" alt=""></button>
+            <button class="dropbtn">DRIKKELSE <img src="images/pilned.svg" alt=""></button>
 
             <div class="drikindhold">
-                <div id="myDropdown" class="drik">
+                <div class="drik">
                     <h2>KAFFE</h2>
                     
                     <p class="linje">
@@ -100,15 +101,14 @@
                     </p>
 
                     <p class="linje">
-                        <span class="navn">Choco Latte</span>
+                        <span class="navn">Choko Latte</span>
                         <span class="dots"></span>
                         <span class="pris">55 kr.</span>
                     </p>
-
                 </div>
                 
 
-                <div id="myDropdown" class="drik">
+                <div class="drik">
                     <h2>KOLDE DRIKKE</h2>
 
                     <p class="linje">
@@ -157,7 +157,7 @@
                     </p>
 
                     <p class="linje">
-                        <span class="navn">Italiensk Sodavad</span>
+                        <span class="navn">Italiensk Sodavand</span>
                         <span class="dots"></span>
                         <span class="pris">39 kr.</span>
                         <p class="lilletekst">(Flere varianter)</p>
@@ -176,9 +176,8 @@
                         <span class="pris">39 kr.</span>
                     </p>
                 </div>
-            </div>
-
-            <div class="drikindhold">
+            
+    
                 <div class="drik">
                     <h2>VARME DRIKKE</h2>
 
@@ -224,7 +223,7 @@
             
 
                 <div class="drik">
-                    <h2>LUSUS KOLDE DRIKKE</h2>
+                    <h2>LUKSUS KOLDE DRIKKE</h2>
 
                     <p class="linje">
                         <span class="navn">Kold kakao</span>
@@ -277,10 +276,10 @@
 
         <!-- Ny dropdown med Øl -->
 
-            <button onclick="myFunction2()" class="dropbtn">ØL, VIN OG COCKTAILS <img src="images/pilned.svg" alt=""></button>
+            <button class="dropbtn">ØL, VIN OG COCKTAILS <img src="images/pilned.svg" alt=""></button>
 
             <div class="olindhold">
-                <div id="myDropdown" class="drik">
+                <div class="drik">
                     <h2>ØL</h2>
 
                     <p class="linje">
@@ -304,23 +303,19 @@
                 </div>
                 
 
-                <div id="myDropdown" class="drik">
+                <div class="drik">
                     <h2>VIN</h2>
 
                     <p class="linje">
-                        <span class="navn">Huset hvidvin eller rosévin</span>
+                        <span class="navn">Husets hvidvin eller rosévin</span>
                         <span class="dots"></span>
                         <span class="pris">59/119 kr.</span>
                         <p class="lilletekst">(Glas eller flaske)</p>
                     </p>
                 </div>
-            </div>
-
-        
-
-            <div class="olindhold">
+            
                 <div class="drik">
-                    <h2>SOMMER COCTAILS</h2>
+                    <h2>SOMMER COCKTAILS</h2>
                     <p class="linje">
                         <span class="navn">Jordbær Bramble</span>
                         <span class="dots"></span>
@@ -379,7 +374,7 @@
                         <span class="navn">White Russian</span>
                         <span class="dots"></span>
                         <span class="pris">79 kr.</span>
-                        <p class="lilletekst">(Mælk, Kahule 2cl, Vodka 2cl)</p>
+                        <p class="lilletekst">(Mælk, Kahlúa 2cl, Vodka 2cl)</p>
                     </p>
 
                     <p class="linje">
@@ -393,7 +388,7 @@
                         <span class="navn">Irish Coffee</span>
                         <span class="dots"></span>
                         <span class="pris">79 kr.</span>
-                        <p class="lilletekst">(Americano, brin farin, Whiskey 4cl, flødeskum)</p>
+                        <p class="lilletekst">(Americano, brun farin, Whiskey 4cl, flødeskum)</p>
                     </p>
                 </div>
 
@@ -401,10 +396,10 @@
 
             <!--Ny dropdown med menukort-->
 
-            <button onclick="myFunction3()" class="dropbtn">MENUKORT <img src="images/pilned.svg" alt=""></button>
+            <button class="dropbtn">MENUKORT <img src="images/pilned.svg" alt=""></button>
 
             <div class="menuindhold">
-                <div id="myDropdown" class="drik">
+                <div class="drik">
                     <h2>BRØD</h2>
                     <h4>Bolle 
                         <br>
@@ -428,7 +423,7 @@
                         <span class="pris">42 kr.</span>
                     </p>
 
-                    <h4>Gultenfri bolle</h4>
+                    <h4>Glutenfri bolle</h4>
                     <p class="linje">
                         <span class="navn">Med smør</span>
                         <span class="dots"></span>
@@ -475,7 +470,7 @@
                 </div>
                 
 
-                <div id="myDropdown" class="drik">
+                <div class="drik">
                     <h2>SANDWICH</h2>
                     <p class="linje">
                         <span class="navn">Kylling og Bacon</span>
@@ -488,11 +483,11 @@
                         <span class="navn">Skinke og Ost</span>
                         <span class="dots"></span>
                         <span class="pris">89 kr.</span>
-                        <p class="lilletekst">Luksus skink, ost, pesto, salat, tomat, løg</p>
+                        <p class="lilletekst">Luksus skinke, ost, pesto, salat, tomat, løg</p>
                     </p>
 
                     <p class="linje">
-                        <span class="navn">Laksesanswich</span>
+                        <span class="navn">Laksesandwich</span>
                         <span class="dots"></span>
                         <span class="pris">89 kr.</span>
                         <p class="lilletekst">Laksesalat, mayo, salat, tomat, løg og valgfri dressing</p>
@@ -534,7 +529,7 @@
                     </p>
 
                     <p class="linje">
-                        <span class="navn">Med mandel creme</span>
+                        <span class="navn">Med mandelcreme</span>
                         <span class="dots"></span>
                         <span class="pris">35 kr.</span>
                     </p>
@@ -587,10 +582,10 @@
 
         <!--Ny dropdown med jul-->
 
-            <button onclick="myFunction4()" class="dropbtn">JULEMENU <img src="images/pilned.svg" alt=""></button>
+            <button class="dropbtn">JULEMENU <img src="images/pilned.svg" alt=""></button>
 
             <div class="julindhold">
-                <div id="myDropdown" class="drik">
+                <div class="drik">
                     <h2>JULEMENU</h2>
                     <p class="linje">
                         <span class="navn">Jule Te</span>
@@ -608,7 +603,7 @@
                         <span class="navn">Gløgg</span>
                         <span class="dots"></span>
                         <span class="pris">49 kr.</span>
-                        <p class="lilletekst">(Serveres med syltetæj og flormelis)</p>
+                        <p class="lilletekst">(Serveres med syltetøj og flormelis)</p>
                     </p>
 
                     <p class="linje">
@@ -631,7 +626,7 @@
                     </p>
 
                     <p class="linje">
-                        <span class="navn">Hjemmelavet honnighjerte</span>
+                        <span class="navn">Hjemmelavet honninghjerte</span>
                         <span class="dots"></span>
                         <span class="pris">25 kr.</span>
                     </p>
@@ -655,21 +650,27 @@
             </div>
         </div> 
         
-    
-        
 
-        <br>
-        <br>
-        <br>
         
 
         
-        <!-- Indhold til forsiden her -->
+        <div class="til-toppen"> <!-- til toppen feature-->
+
+            <div id="til-toppen-pil">
+                <a href="#til-toppen"> <img src="images/til-toppen-pil-billede.svg" alt="pil billede"></a>
+            </div>
+
+            <h4>Til Toppen</h4>
+
+        </div>
+
     </main>
 
-    <footer>
-        <img class="corner tl" src="images/guldhjørne1.svg" alt="guld hjørne">
-        <img class="corner tr" src="images/guldhjørne2.svg" alt="guld hjørne">
+    <!--FOOTER-->
+
+    <footer id="footer-stop">
+        <img class="corner tl" src="images/guldhjoerne1.svg" alt="guld hjørne">
+        <img class="corner tr" src="images/guldhjoerne2.svg" alt="guld hjørne">
 
          <div id="footer-content">
             <section>

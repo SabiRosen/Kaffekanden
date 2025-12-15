@@ -55,6 +55,11 @@ header img:hover{
     text-decoration: underline;
     text-underline-offset: 6px;
 }
+#desktopnav ul li a.active-nav{
+    text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.5);
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
 
 /*------------Mobil nav-----------*/
 #mobilnav {
@@ -188,6 +193,7 @@ footer {
     align-items: center;
     width: 100%;
 }
+
 #footer-divider-mobil img {
     width: 100%;
     height: auto;
@@ -219,6 +225,9 @@ footer {
     }
     #mobilnav {
         display: block;
+    }
+    header img:hover{
+    transform: none;
     }
 
     #kort {

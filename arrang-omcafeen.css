@@ -153,7 +153,7 @@
 
 /*Dette siger vores gæster*/
 
-#gæster{
+#gaester{
     margin-top: 10%;
     width: 100%;
     color: black;
@@ -166,12 +166,12 @@
     
 }
 
-#gæster h2{
+#gaester h2{
     margin-left: 2%;
     margin-bottom: 1%;
 }
 
-#gæsterindhold{
+#gaesterindhold{
     background-color: #b08968;
     width: 100%;
     display: flex;
@@ -391,7 +391,7 @@ label {
 
 
     /*Dette siger vores gæster*/
-    #gæsterindhold{
+    #gaesterindhold{
         gap: 1rem;   
         padding: 5% 2%; 
     }

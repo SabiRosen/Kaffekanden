@@ -16,7 +16,7 @@ body{
        
 }
 
-h1{
+h1, h2, h4, p{
     font-family: 'roboto', sans-serif;
 }
 
@@ -26,19 +26,29 @@ h1{
 /*--------------------------------DROPDOWN FEATURE-------------------------------*/
 
 
+
 .dropdown{
     position: relative;
     z-index: 2;
+    margin-top: 10%;
 }
 
 
-
 .dropdown h1{
-    margin-top: 10%;
     margin-bottom: 4%;
     text-align: center;
     color: white;
-    font-family: 'roboto', sans-serif;
+}
+
+.dropdown h4{
+    font-size: 1.5rem;
+    margin-top: 5%;
+}
+
+.dropdown h4 p{
+    margin-bottom: 3%;
+    font-size: 0.8rem;
+
 }
 
 .drikindhold, .olindhold, .menuindhold,.julindhold{
@@ -46,12 +56,16 @@ h1{
   display: none;
   width: 70%;
   margin: auto;
+  justify-content: space-between;
+  gap: 5%;
+  flex-wrap: wrap;
 }
 
 .drik{
-    width: 100%;
-    margin: 5% auto;
+    flex: 1 1 45%;
+    width: 50%;
     line-height: 2rem;
+    padding-bottom: 5%;
 }  
 
                                             
@@ -59,6 +73,7 @@ h1{
     display: flex;
     align-items: baseline;
 }
+
 .navn{
     font-size: 1.3rem;
 }
@@ -76,11 +91,12 @@ h1{
 
 .drik h2{
     font-family: 'roboto', sans-serif;
-    padding-bottom: 5%;
+    margin: 5% 0;
 }
 
 .drikindhold.show, .olindhold.show, .menuindhold.show, .julindhold.show{
   display: flex;
+  
 }
 
 button{
@@ -88,7 +104,7 @@ button{
   border-bottom: #bba14f solid 2px;
   width: 40%;
   margin: auto;
-  padding: 1%;
+  padding: 1% 0% 0.5% 0%;
   text-align: center;
   justify-content: center;
   margin-bottom: 2%;
@@ -97,6 +113,7 @@ button{
   color: white;
   font-weight: 300;
   font-size: 2rem;
+  cursor: pointer;
 
   /*Generelle regler for <button> i HTML*/
   background-color: transparent;
@@ -105,9 +122,21 @@ button{
 }
 
 
+/*Pil transition*/
+.dropbtn img{
+  transition: transform 0.3s ease;
+}
+
+.dropbtn.active img {
+  transform: rotate(180deg);
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+
 /*Nyheder sektion*/
 #nyheder{
-    margin-top: 10%;
+    margin: 10% auto;
     width: 100%;
     color: white;
     position: relative;
@@ -148,15 +177,23 @@ button{
 
     .dropbtn{
         width: 80%;
-        margin: 5%;
+        margin: 5% auto;
+
     }
 
     .drikindhold, .olindhold, .menuindhold, .julindhold{
-        display: block;
+        display: none;
     }
 
     .drik{
         margin-bottom: 10%;
+        width: 100%;
+        margin: 10% auto;
+    }
+
+    .drikindhold.show, .olindhold.show, .menuindhold.show,.julindhold.show {
+        display: block;
     }
 
 }
+
