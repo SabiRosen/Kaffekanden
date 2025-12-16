@@ -16,9 +16,6 @@ body{
        
 }
 
-h1, h2, h4, p{
-    font-family: 'roboto', sans-serif;
-}
 
 
 
@@ -38,11 +35,15 @@ h1, h2, h4, p{
     margin-bottom: 4%;
     text-align: center;
     color: white;
+    font-family: 'roboto', sans-serif;
+
 }
 
 .dropdown h4{
     font-size: 1.5rem;
     margin-top: 5%;
+    font-weight: 300;
+    font-family: 'roboto', sans-serif;
 }
 
 .bolletekst{
@@ -147,8 +148,7 @@ button{
 }
 
 #nyheder h2{
-    margin-left: 2%;
-    margin-bottom: 1%;
+    margin: 1% 2%;
 }
 
 #nyhederindhold{
