@@ -122,6 +122,25 @@
     width: 100%;
     margin: 5% 10%;
 }
+
+.kontaktlink a{
+    text-decoration: none;
+    color: white;
+}
+
+.kontaktlinje{
+    display: flex;
+    align-items: baseline;
+    width: 90%;
+}
+.prikker{
+
+    flex: 1;                                
+    border-bottom: 3px dotted #000000;
+    margin: 0 8px;
+}
+
+
 .kontaktinfo{
     width: 80%;
 }
@@ -150,7 +169,7 @@
 .kontaktikoner img{
     display: block;
     width: 25%;
-}
+} 
 
 /*---------- TIL MOBIL ------------*/
 
@@ -242,6 +261,9 @@
 
     .kontaktmobil{
         display: block;
+    }
+    .kontaktmobil p{
+        font-size: 1.1rem;
     }
 
     .kontaktdesktop{

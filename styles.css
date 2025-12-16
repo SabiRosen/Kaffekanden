@@ -10,6 +10,7 @@
 
 
 
+
 /*--------------------------*/
 
 html{
@@ -37,8 +38,8 @@ p {
 
 .til-toppen {  /* selve kassen*/
     display: none; 
-    height: 150px;
-    width: 100px;
+    height: 140px;
+    width: 90px;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -61,12 +62,17 @@ p {
     #til-toppen-pil {    /* kassen med pilen */ 
         display: flex;
         background-color: #738743;
-        width: 80px;
-        height: 80px;
+        width: 65px;
+        height: 65px;
         justify-content: center;
         border-radius: 50%;
         align-items: center;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    #til-toppen-pil img{
+        width: 30px;
+        height: 30px;
     }
     
     .til-toppen h4 { 
@@ -188,6 +194,30 @@ p {
 
 
 @media screen and (max-width: 600px) {
+
+    /* til toppen knap*/
+
+    .til-toppen { /*yderste kasse*/
+        height: 100px;
+        width: 90px;
+    } 
+
+    #til-toppen-pil { /*kassen med cirkel og pil*/
+        width: 55px;
+        height: 55px;
+    }
+
+    #til-toppen-pil img { /*billedet af pilen inde i cirklen*/
+        width: 25px;
+        height: 25px;
+    }
+
+    .til-toppen h4 { /*tekst størrelsen under pilen*/
+        font-size: 14px;
+    }
+
+        /*--------------*/
+
     h2 {
         font-size: 2rem;
     }
@@ -223,6 +253,21 @@ p {
     .br {
         bottom: 15px;
         right: 15px;
+    }
+
+    /*hero banner sektioner*/
+
+    .hero-info {
+        width: 300px;
+        margin: auto;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .hero-info p {
+        font-size: 1.1rem;
+        line-height: 1.5;
     }
 
     

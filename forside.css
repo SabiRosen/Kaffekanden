@@ -8,7 +8,7 @@
 
 #hero {
     width: 100%;
-    height: 91%;
+    height: 91vh;
 }
 
 #hero img {
@@ -22,7 +22,7 @@
 #hero-overlay {
     position: absolute;
     width: 100%;
-    height: 91%;
+    height: 91vh;
     top: 0;
     z-index: 2;
     background: rgba(0,0,0,0.3); /* mørk overlay*/
@@ -51,7 +51,7 @@
 
 
 .rullebaand {
-    height: 9%;
+    height: 9vh;
 
     background-color: #6F4E37; 
     color: #FFFFFF; 
@@ -381,6 +381,18 @@ label {
         width: 50%;
     }
 
+    #hero{
+        height: 91dvh;
+    }
+
+    #hero-overlay{
+        height: 91dvh;
+    }
+
+    .rullebaand{
+        height: 9dvh;
+    }
+
     #info-kasse {
         flex-direction: column;
         padding: 1rem; 
@@ -395,7 +407,7 @@ label {
     .info-kolonner {
         width: 100%;
         height: 100%;
-        padding: 0 2rem;
+        padding: 0 1rem;
     }
 
     .info-hoejre {
@@ -418,8 +430,12 @@ label {
 
     .info-sektion {
         height: auto;
-        padding: 2rem 0;
+        padding: 1.5rem 0;
 
+    }
+
+    .info-sektion p{
+        font-size: 1.1rem;
     }
 
     /* ---- tre-kolonner sektion ---- */
@@ -529,7 +545,7 @@ label {
 
 /*TABLET STØRRELSE -------------------------------- · max-width:960px*/
 
-@media screen and (min-width: 601px) and (max-width: 1200px){
+@media screen and (min-width: 601px) and (max-width: 1300px){
 
     #hero-container {
         height: 100dvh;

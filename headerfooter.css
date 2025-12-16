@@ -140,6 +140,7 @@ footer {
 
 #footer-content p {
     margin-bottom: 0.5em;
+    color: #fff;
 }
 
 /*kort fra google maps*/
@@ -279,6 +280,8 @@ footer {
     }
 
     /*FOOTER*/
+
+    
 
     .ikoner, #socialmedia {
         display: flex;

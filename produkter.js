@@ -1,16 +1,16 @@
-/* KODE TIL SCROLL I SORTERING */
+// /* KODE TIL SCROLL I SORTERING */
 
-const sortering = document.getElementById("sortering");
-const scrollAmount = 300; /* bestemmer hvor meget der scrolles pr klik */
+// const sortering = document.getElementById("sortering");
+// const scrollAmount = 300; /* bestemmer hvor meget der scrolles pr klik */
 
-document.getElementById("scroll-left").onclick = function() {
+// document.getElementById("scroll-left").onclick = function() {
 
-    sortering.scrollLeft = sortering.scrollLeft - scrollAmount;
-}
+//     sortering.scrollLeft = sortering.scrollLeft - scrollAmount;
+// }
 
-document.getElementById("scroll-right").onclick = function() {
-    sortering.scrollLeft = sortering.scrollLeft + scrollAmount;
-}
+// document.getElementById("scroll-right").onclick = function() {
+//     sortering.scrollLeft = sortering.scrollLeft + scrollAmount;
+// }
 
 
 /* KODE TIL SORTERINGS KANPPERNE */
