@@ -62,7 +62,7 @@
     overflow: hidden; 
     user-select: none; /* forhindrer markering af tekst */
     --gap: 4px; 
-     gap: var(--gap); 
+    gap: var(--gap); 
 
 } 
 
@@ -75,6 +75,11 @@
     align-items: center;
     gap: var(--gap);
 
+}
+
+.menu-link {
+    display: block;
+    text-decoration: none;
 }
 
 .rullebaand .coffee {
@@ -350,7 +355,7 @@ label {
 .cta-input {
     width: 50%;
     background-color: #738743;
-    color: #fff;
+    color: #000;
     text-decoration: none;
     text-align: center;
     border: none;
@@ -366,6 +371,11 @@ label {
     background-color: #ADC178;
     color: #000;
     transition: 0.3s ease-in-out;
+}
+
+.tilmeld-indhold{
+    width: 80%;
+    margin: auto;
 }
 
 
@@ -517,11 +527,15 @@ label {
     }
 
     .tilmeld-kasse {
-        width: 60%;
+        width: 80%;
         bottom: 8%;
-        left: 20%;
+        left: 50%;
+        transform: translateX(-50%);
         line-height: 1.5rem;
+        display: flex;
+        flex-direction: column;
     }
+
     .tilmeld-kasse h2{
         font-size: 1.5rem;
     }

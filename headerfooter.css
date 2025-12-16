@@ -106,7 +106,7 @@ footer {
     background-color: #6F4E37;
     color: white;
     text-align: left;
-    padding: 1em 4.5em;
+    padding: 1rem 4.5rem;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -123,7 +123,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 3em;
+    gap: 3rem;
     margin-top: 4em;
     width: 100%;
 }
@@ -179,23 +179,11 @@ footer {
 /*footer guld opdelings bundlinje*/
 
 #footer-divider {
-    padding: 2rem 0;
+    padding: 1rem 0;
     align-items: center;
     width: 100%;
 }
 #footer-divider img {
-    width: 100%;
-    height: auto;
-}
-
-#footer-divider-mobil {
-    display: none;
-    padding: 2rem 0;
-    align-items: center;
-    width: 100%;
-}
-
-#footer-divider-mobil img {
     width: 100%;
     height: auto;
 }
@@ -235,28 +223,36 @@ footer {
         width: 100%;
     }
 
+    footer{
+        padding: 1rem 3rem;
+    }
+
     #footer-content {
         flex-direction: column;
+        width: 100%;
     }
 
     #footer-content section {
         width: 100%;
+        max-width: 100%;
     }
 
-    .ikoner, #socialemedier {
-        gap: 0.3rem;
+    .ikoner, #socialmedia {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        margin: 2rem auto;
     }
 
     #footer-bottom {
         flex-direction: column;
         align-items: center;
+        margin: auto;
     }
 
     #footer-divider {
-        display: none;
-    }
-    #footer-divider-mobil {
-        display: block;
+        width: auto;
     }
 }
 

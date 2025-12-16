@@ -33,6 +33,15 @@ p {
     font-family: 'roboto', sans-serif;
 }
 
+.telefon-link{
+    text-decoration: none;
+    color: #fff;
+}
+
+.telefon-link:hover{
+    text-decoration: underline;
+}
+
 
 /* TIL TOPPEN FEATURE*/
 
@@ -112,7 +121,7 @@ p {
     margin: 1rem auto 0;
     padding: 1rem 2.2rem;
     background-color: #738743;
-    color: #fff;
+    color: #000;
     text-decoration: none;
     text-align: center;
     border: none;
@@ -222,6 +231,10 @@ p {
         font-size: 2rem;
     }
 
+    .telefon-link:hover{
+        text-decoration: none;
+    }
+
     .cta {
         padding: 0.8rem 1.7rem;
         font-size: 1.2rem;
@@ -231,7 +244,7 @@ p {
     .cta:hover {
         transition: none;
         background-color: #738743;
-        color: #fff;
+        color: #000;
     }
 
     .corner{

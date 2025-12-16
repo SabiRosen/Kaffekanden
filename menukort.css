@@ -45,9 +45,9 @@ h1, h2, h4, p{
     margin-top: 5%;
 }
 
-.dropdown h4 p{
+.bolletekst{
     margin-bottom: 3%;
-    font-size: 0.8rem;
+    font-size: 1rem;
 
 }
 
@@ -183,13 +183,17 @@ button{
 
     .drikindhold, .olindhold, .menuindhold, .julindhold{
         display: none;
+        width: 85%;
+    }
+
+    .navn, .pris{
+        font-size: 1rem;
     }
 
     .drik{
         margin-bottom: 10%;
         width: 100%;
-        margin: 10% auto;
-        white-space: normal; /*En løsning til mobilskærm, så den deler ordene op???????????*/ 
+        margin: 10% 0;
     }
 
     .drikindhold.show, .olindhold.show, .menuindhold.show,.julindhold.show {
